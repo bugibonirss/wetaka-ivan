@@ -78,44 +78,6 @@ function initMobileMenu() {
 }
 
 // ============================================
-// FORM HANDLING - EMAILJS VERSION
-// ============================================
-(function() {
-    // Initialize EmailJS with your Public Key
-    emailjs.init("YOUR_PUBLIC_KEY");
-})();
-
-function initFormHandler() {
-    const form = document.getElementById('contactForm');
-    if (!form) return;
-    
-    form.addEventListener('submit', function(e) {
-        e.preventDefault();
-        
-        const submitBtn = form.querySelector('button[type="submit"]');
-        const originalText = submitBtn.innerHTML;
-        
-        // Show loading
-        submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
-        submitBtn.disabled = true;
-        
-        // Send email
-        emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form)
-            .then(() => {
-                showNotification('Message sent successfully! I will respond soon.', 'success');
-                form.reset();
-                submitBtn.innerHTML = originalText;
-                submitBtn.disabled = false;
-            })
-            .catch((error) => {
-                console.error('EmailJS Error:', error);
-                showNotification('Failed to send message. Please try again or email me directly.', 'error');
-                submitBtn.innerHTML = originalText;
-                submitBtn.disabled = false;
-            });
-    });
-}
-// ============================================
 // NAVIGATION SCROLL
 // ============================================
 function initNavigation() {
