@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- Primary Meta Tags -->
+    <title>Contact Mr. Wetaka Ivan | Mathematics & ICT Educator | Uganda</title>
+    <meta name="title" content="Contact Mr. Wetaka Ivan | Get in Touch">
+    <meta name="description" content="Get in touch with Mr. Wetaka Ivan - Mathematics and ICT Education student at Islamic University in Uganda. Available for collaborations, speaking engagements, and educational consultations.">
+    <meta name="keywords" content="Contact Wetaka Ivan, Mathematics Teacher Contact Uganda, ICT Educator Uganda, IUIU Contact, Educational Consultant Uganda">
+    <meta name="author" content="Mr. Wetaka Ivan">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://wetaka-ivan.vercel.app/contact">
+    <meta property="og:title" content="Contact Mr. Wetaka Ivan">
+    <meta property="og:description" content="Get in touch with Mr. Wetaka Ivan - Mathematics & ICT Educator">
+    <meta property="og:image" content="https://wetaka-ivan.vercel.app/og-image.jpg">
+    
+    <!-- Canonical -->
+    <link rel="canonical" href="https://wetaka-ivan.vercel.app/contact">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ContactPage",
+        "name": "Contact Mr. Wetaka Ivan",
+        "description": "Contact page for Mr. Wetaka Ivan, Mathematics and ICT Educator",
+        "mainEntity": {
+            "@type": "Person",
+            "name": "Mr. Wetaka Ivan",
+            "email": "wetakaivan@drwesina.com",
+            "telephone": "+256761446664",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Mbale",
+                "addressRegion": "Eastern Region",
+                "addressCountry": "Uganda"
+            },
+            "alumniOf": {
+                "@type": "EducationalOrganization",
+                "name": "Islamic University in Uganda"
+            }
+        }
+    }
+    </script>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23256deb'/%3E%3Ctext x='50' y='68' font-size='50' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'%3EWI%3C/text%3E%3C/svg%3E">
+    
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        /* Contact Page Specific Styles */
+        .page-header {
+            background: linear-gradient(135deg, var(--primary-soft) 0%, var(--secondary-soft) 100%);
+            padding: 8rem 0 4rem;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .page-header-content {
+            text-align: center;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .page-header h1 {
+            margin-bottom: var(--space-4);
+        }
+        
+        .page-header .breadcrumb {
+            display: flex;
+            justify-content: center;
+            gap: var(--space-2);
+            color: var(--gray-600);
+        }
+        
+        .page-header .breadcrumb a {
+            color: var(--primary);
+        }
+        
+        .page-header .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Contact Grid */
+        .contact-full-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: var(--space-10);
+        }
+        
+        /* Contact Info Card */
+        .contact-info-card {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            border-radius: var(--radius-2xl);
+            padding: var(--space-8);
+            color: var(--white);
+            height: fit-content;
+            position: sticky;
+            top: 100px;
+        }
+        
+        .contact-info-header {
+            margin-bottom: var(--space-6);
+        }
+        
+        .contact-info-header h2 {
+            color: var(--white);
+            margin-bottom: var(--space-3);
+        }
+        
+        .contact-info-header p {
+            color: rgba(255, 255, 255, 0.9);
+            line-height: 1.7;
+        }
+        
+        .contact-details-list {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-5);
+            margin-bottom: var(--space-8);
+        }
+        
+        .contact-detail-card {
+            display: flex;
+            align-items: flex-start;
+            gap: var(--space-4);
+        }
+        
+        .contact-detail-icon {
+            width: 50px;
+            height: 50px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: var(--radius-lg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+            backdrop-filter: blur(10px);
+            flex-shrink: 0;
+        }
+        
+        .contact-detail-content h4 {
+            color: var(--white);
+            margin-bottom: 0.25rem;
+            font-size: 1.125rem;
+        }
+        
+        .contact-detail-content p {
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 0.25rem;
+        }
+        
+        .contact-detail-content small {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.8125rem;
+        }
+        
+        .contact-detail-content a {
+            color: rgba(255, 255, 255, 0.9);
+            text-decoration: none;
+            transition: color var(--transition-fast);
+        }
+        
+        .contact-detail-content a:hover {
+            color: var(--white);
+            text-decoration: underline;
+        }
+        
+        .contact-social-large {
+            margin-bottom: var(--space-8);
+        }
+        
+        .contact-social-large h4 {
+            color: var(--white);
+            margin-bottom: var(--space-4);
+        }
+        
+        .social-links-large {
+            display: flex;
+            gap: var(--space-3);
+            flex-wrap: wrap;
+        }
+        
+        .social-link-large {
+            width: 50px;
+            height: 50px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: var(--radius-lg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 1.25rem;
+            text-decoration: none;
+            transition: all var(--transition-base);
+            backdrop-filter: blur(10px);
+        }
+        
+        .social-link-large:hover {
+            background: var(--white);
+            color: var(--primary);
+            transform: translateY(-5px);
+        }
+        
+        .availability-badge {
+            display: inline-block;
+            padding: 0.375rem 1rem;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: var(--radius-full);
+            font-size: 0.875rem;
+            margin-top: var(--space-4);
+        }
+        
+        .availability-badge i {
+            margin-right: var(--space-1);
+            color: #10b981;
+        }
+        
+        /* Contact Form Container */
+        .contact-form-container {
+            background: var(--white);
+            border-radius: var(--radius-2xl);
+            padding: var(--space-8);
+            box-shadow: var(--shadow-xl);
+            border: 1px solid var(--border-light);
+        }
+        
+        .contact-form-header {
+            margin-bottom: var(--space-6);
+        }
+        
+        .contact-form-header h3 {
+            margin-bottom: var(--space-2);
+        }
+        
+        .contact-form-header p {
+            color: var(--gray-600);
+        }
+        
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--space-4);
+            margin-bottom: var(--space-4);
+        }
+        
+        .form-group {
+            margin-bottom: var(--space-5);
+        }
+        
+        .form-label {
+            display: block;
+            font-weight: 600;
+            color: var(--gray-700);
+            margin-bottom: var(--space-2);
+        }
+        
+        .form-label .required {
+            color: #ef4444;
+        }
+        
+        .form-control {
+            width: 100%;
+            padding: 0.875rem 1.25rem;
+            font-size: 1rem;
+            font-family: 'Inter', sans-serif;
+            background: var(--gray-50);
+            border: 2px solid var(--border-light);
+            border-radius: var(--radius-lg);
+            color: var(--gray-900);
+            transition: all var(--transition-fast);
+        }
+        
+        .form-control:focus {
+            outline: none;
+            border-color: var(--primary);
+            background: var(--white);
+            box-shadow: 0 0 0 4px var(--primary-soft);
+        }
+        
+        .form-control::placeholder {
+            color: var(--gray-400);
+        }
+        
+        select.form-control {
+            cursor: pointer;
+            appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%236b7280' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 1.25rem center;
+            background-size: 16px;
+        }
+        
+        textarea.form-control {
+            min-height: 150px;
+            resize: vertical;
+        }
+        
+        .form-check {
+            display: flex;
+            align-items: flex-start;
+            gap: var(--space-3);
+            margin-bottom: var(--space-6);
+        }
+        
+        .form-check-input {
+            width: 20px;
+            height: 20px;
+            accent-color: var(--primary);
+            margin-top: 2px;
+            cursor: pointer;
+        }
+        
+        .form-check-label {
+            color: var(--gray-600);
+            font-size: 0.9375rem;
+            line-height: 1.5;
+            cursor: pointer;
+        }
+        
+        .form-check-label a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+        
+        .form-check-label a:hover {
+            text-decoration: underline;
+        }
+        
+        .form-submit {
+            display: flex;
+            align-items: center;
+            gap: var(--space-4);
+        }
+        
+        .response-time {
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+            color: var(--gray-500);
+            font-size: 0.875rem;
+        }
+        
+        .response-time i {
+            color: var(--primary);
+        }
+        
+        /* Map Section */
+        .map-section {
+            margin-top: var(--space-12);
+        }
+        
+        .map-container {
+            background: var(--gray-100);
+            border-radius: var(--radius-2xl);
+            overflow: hidden;
+            height: 300px;
+            position: relative;
+        }
+        
+        .map-placeholder {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, var(--primary-soft) 0%, var(--secondary-soft) 100%);
+            color: var(--primary);
+        }
+        
+        .map-placeholder-content {
+            text-align: center;
+        }
+        
+        .map-placeholder i {
+            font-size: 3rem;
+            margin-bottom: var(--space-4);
+        }
+        
+        .map-placeholder h4 {
+            margin-bottom: var(--space-2);
+        }
+        
+        .map-placeholder p {
+            color: var(--gray-600);
+        }
+        
+        /* FAQ Section */
+        .faq-section {
+            background: var(--bg-secondary);
+            margin-top: var(--space-12);
+        }
+        
+        .faq-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: var(--space-6);
+        }
+        
+        .faq-item {
+            background: var(--white);
+            border-radius: var(--radius-xl);
+            padding: var(--space-6);
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--border-light);
+        }
+        
+        .faq-question {
+            display: flex;
+            align-items: center;
+            gap: var(--space-3);
+            margin-bottom: var(--space-3);
+        }
+        
+        .faq-question i {
+            color: var(--primary);
+            font-size: 1.25rem;
+        }
+        
+        .faq-question h4 {
+            font-size: 1.125rem;
+            margin-bottom: 0;
+        }
+        
+        .faq-answer {
+            color: var(--gray-600);
+            line-height: 1.7;
+            padding-left: 2rem;
+        }
+        
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .contact-full-grid {
+                grid-template-columns: 1fr;
+                gap: var(--space-8);
+            }
+            
+            .contact-info-card {
+                position: static;
+            }
+            
+            .faq-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+            
+            .form-submit {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .form-submit .btn {
+                width: 100%;
+            }
+            
+            .contact-form-container {
+                padding: var(--space-5);
+            }
+        }
+        
+        @media (max-width: 640px) {
+            .contact-info-card {
+                padding: var(--space-5);
+            }
+            
+            .social-links-large {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- ==================== NAVIGATION ==================== -->
+    <nav class="navbar" id="navbar">
+        <div class="container navbar-container">
+            <a href="index.html" class="navbar-brand">
+                <div class="brand-logo">WI</div>
+                <div class="brand-text-group">
+                    <span class="brand-text">Wetaka Ivan</span>
+                    <span class="brand-subtext">Mathematics & ICT Educator</span>
+                </div>
+            </a>
+            
+            <button class="navbar-toggle" id="navbarToggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            
+            <div class="navbar-menu" id="navbarMenu">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="certifications.html" class="nav-link">Certifications</a></li>
+                    <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link active">Contact</a></li>
+                </ul>
+                <a href="contact.html" class="btn btn-primary btn-sm">
+                    <i class="fas fa-paper-plane"></i> Get In Touch
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main id="main-content">
+        <!-- ==================== PAGE HEADER ==================== -->
+        <section class="page-header">
+            <div class="container">
+                <div class="page-header-content" data-aos="fade-up">
+                    <h1 class="gradient-text">Get In Touch</h1>
+                    <div class="breadcrumb">
+                        <a href="index.html">Home</a>
+                        <span>/</span>
+                        <span>Contact</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-shape hero-shape-1" style="opacity: 0.3;"></div>
+            <div class="hero-shape hero-shape-2" style="opacity: 0.3;"></div>
+        </section>
+
+        <!-- ==================== CONTACT SECTION ==================== -->
+        <section class="section">
+            <div class="container">
+                <div class="contact-full-grid">
+                    <!-- Contact Info Card -->
+                    <div class="contact-info-card" data-aos="fade-right">
+                        <div class="contact-info-header">
+                            <h2>Let's Connect</h2>
+                            <p>
+                                I'm always open to discussing educational opportunities, 
+                                collaborations, or just having a conversation about mathematics 
+                                and technology education in Uganda.
+                            </p>
+                        </div>
+                        
+                        <div class="contact-details-list">
+                            <div class="contact-detail-card">
+                                <div class="contact-detail-icon">
+                                    <i class="fas fa-map-pin"></i>
+                                </div>
+                                <div class="contact-detail-content">
+                                    <h4>Location</h4>
+                                    <p>Mbale / Sironko, Uganda</p>
+                                    <small>Eastern Region</small>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-detail-card">
+                                <div class="contact-detail-icon">
+                                    <i class="fas fa-university"></i>
+                                </div>
+                                <div class="contact-detail-content">
+                                    <h4>University</h4>
+                                    <p>Islamic University in Uganda (IUIU)</p>
+                                    <small>Main Campus, Mbale</small>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-detail-card">
+                                <div class="contact-detail-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-detail-content">
+                                    <h4>Email Address</h4>
+                                    <p><a href="mailto:wetakaivan@drwesina.com">wetakaivan@drwesina.com</a></p>
+                                    <small><a href="mailto:wivan.nk.iu@gmail.com">wivan.nk.iu@gmail.com</a></small>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-detail-card">
+                                <div class="contact-detail-icon">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div class="contact-detail-content">
+                                    <h4>Phone / WhatsApp</h4>
+                                    <p><a href="tel:+256761446664">+256 761 446664</a></p>
+                                    <small>Available on WhatsApp</small>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-detail-card">
+                                <div class="contact-detail-icon">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </div>
+                                <div class="contact-detail-content">
+                                    <h4>Academic Program</h4>
+                                    <p>BSc Education (Mathematics & ICT)</p>
+                                    <small>Year 2 • Class of 2027</small>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-social-large">
+                            <h4>Connect With Me</h4>
+                            <div class="social-links-large">
+                                <a href="#" class="social-link-large" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="#" class="social-link-large" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="social-link-large" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
+                                    <i class="fab fa-x-twitter"></i>
+                                </a>
+                                <a href="https://www.facebook.com/share/18K3Bjq3pe/" class="social-link-large" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="https://wa.me/256761446664?text=Hello%20Mr.%20Ivan%2C%20I%20visited%20your%20website%20and%20would%20like%20to%20connect" class="social-link-large" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="availability-badge">
+                            <i class="fas fa-circle"></i> Available for collaborations
+                        </div>
+                    </div>
+                    
+                    <!-- Contact Form -->
+                    <div class="contact-form-container" data-aos="fade-left">
+                        <div class="contact-form-header">
+                            <h3>Send Me a Message</h3>
+                            <p>Fill out the form below and I'll get back to you within 24-48 hours.</p>
+                        </div>
+                        
+                        <form id="contactForm" action="https://formspree.io/f/your-form-id" method="POST">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name" class="form-label">
+                                        Full Name <span class="required">*</span>
+                                    </label>
+                                    <input type="text" id="name" name="name" class="form-control" 
+                                           placeholder="Enter your full name" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="email" class="form-label">
+                                        Email Address <span class="required">*</span>
+                                    </label>
+                                    <input type="email" id="email" name="email" class="form-control" 
+                                           placeholder="your.email@example.com" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="phone" class="form-label">Phone Number (Optional)</label>
+                                    <input type="tel" id="phone" name="phone" class="form-control" 
+                                           placeholder="+256 XXX XXX XXX">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="subject" class="form-label">Subject</label>
+                                    <select id="subject" name="subject" class="form-control">
+                                        <option value="">Select a subject</option>
+                                        <option value="collaboration">Educational Collaboration</option>
+                                        <option value="speaking">Speaking Engagement</option>
+                                        <option value="mentorship">Mentorship Request</option>
+                                        <option value="project">Project Discussion</option>
+                                        <option value="consultation">Educational Consultation</option>
+                                        <option value="other">Other Inquiry</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message" class="form-label">
+                                    Message <span class="required">*</span>
+                                </label>
+                                <textarea id="message" name="message" class="form-control" 
+                                          placeholder="Write your message here... Please include as much detail as possible." 
+                                          required></textarea>
+                            </div>
+                            
+                            <div class="form-check">
+                                <input type="checkbox" id="consent" name="consent" class="form-check-input" required>
+                                <label for="consent" class="form-check-label">
+                                    I consent to having this website store my submitted information so they can respond to my inquiry. 
+                                    See our <a href="#">Privacy Policy</a> for more information. *
+                                </label>
+                            </div>
+                            
+                            <div class="form-submit">
+                                <button type="submit" class="btn btn-primary btn-lg">
+                                    <i class="fas fa-paper-plane"></i> Send Message
+                                </button>
+                                <span class="response-time">
+                                    <i class="far fa-clock"></i> Response within 24-48 hours
+                                </span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== MAP SECTION ==================== -->
+        <section class="map-section">
+            <div class="container">
+                <div class="map-container" data-aos="fade-up">
+                    <div class="map-placeholder">
+                        <div class="map-placeholder-content">
+                            <i class="fas fa-map-marked-alt"></i>
+                            <h4>Mbale / Sironko, Uganda</h4>
+                            <p>Eastern Region • Islamic University in Uganda Main Campus</p>
+                            <a href="https://maps.google.com/?q=Islamic+University+in+Uganda+Mbale" 
+                               target="_blank" rel="noopener" class="btn btn-outline" style="margin-top: var(--space-4);">
+                                <i class="fas fa-external-link-alt"></i> View on Google Maps
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== FAQ SECTION ==================== -->
+        <section class="faq-section section">
+            <div class="container">
+                <div class="section-header text-center" data-aos="fade-up">
+                    <span class="section-tag">FAQ</span>
+                    <h2 class="section-title">Frequently Asked Questions</h2>
+                    <p class="section-description">
+                        Quick answers to common questions about working with me
+                    </p>
+                </div>
+                
+                <div class="faq-grid">
+                    <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="faq-question">
+                            <i class="fas fa-question-circle"></i>
+                            <h4>What types of collaboration are you open to?</h4>
+                        </div>
+                        <div class="faq-answer">
+                            I'm open to educational collaborations including curriculum development, 
+                            EdTech projects, teacher training workshops, research partnerships, and 
+                            speaking engagements at educational events.
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="faq-question">
+                            <i class="fas fa-question-circle"></i>
+                            <h4>How quickly do you respond to messages?</h4>
+                        </div>
+                        <div class="faq-answer">
+                            I typically respond to all messages within 24-48 hours during weekdays. 
+                            For urgent matters, please use WhatsApp for a faster response.
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+                        <div class="faq-question">
+                            <i class="fas fa-question-circle"></i>
+                            <h4>Do you offer tutoring services?</h4>
+                        </div>
+                        <div class="faq-answer">
+                            Yes, I offer mathematics and ICT tutoring for secondary school students. 
+                            Please contact me with specific requirements for availability and rates.
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
+                        <div class="faq-question">
+                            <i class="fas fa-question-circle"></i>
+                            <h4>Can you speak at our school event?</h4>
+                        </div>
+                        <div class="faq-answer">
+                            Absolutely! I'm passionate about inspiring students in STEM education. 
+                            Contact me with event details, and I'll be happy to discuss speaking opportunities.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== CTA SECTION ==================== -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-card" data-aos="fade-up">
+                    <h2>Prefer Direct Communication?</h2>
+                    <p>Feel free to reach out via WhatsApp or social media for a quicker conversation.</p>
+                    <div class="cta-buttons">
+                        <a href="https://wa.me/256761446664?text=Hello%20Mr.%20Ivan%2C%20I%20visited%20your%20website" 
+                           class="btn btn-primary btn-lg" target="_blank" rel="noopener">
+                            <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                        </a>
+                        <a href="mailto:wetakaivan@drwesina.com" class="btn btn-outline-light btn-lg">
+                            <i class="fas fa-envelope"></i> Send Email Directly
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <div class="brand-logo">WI</div>
+                        <span class="brand-text">Wetaka Ivan</span>
+                    </div>
+                    <p class="footer-description">
+                        Mathematics and ICT Education student at Islamic University in Uganda. 
+                        Cisco Certified • EdTech Enthusiast • Future Educational Leader
+                    </p>
+                    <p class="footer-location">
+                        <i class="fas fa-map-pin"></i> Sironko/Mbale, Uganda
+                    </p>
+                </div>
+                
+                <div class="footer-links-group">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Me</a></li>
+                        <li><a href="certifications.html">Certifications</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links-group">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-file-pdf"></i> Download CV</a></li>
+                        <li><a href="#"><i class="fas fa-blog"></i> Blog (Coming Soon)</a></li>
+                        <li><a href="#"><i class="fas fa-book"></i> Teaching Resources</a></li>
+                        <li><a href="#"><i class="fas fa-shield-alt"></i> Privacy Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links-group">
+                    <h4>Connect</h4>
+                    <div class="footer-social">
+                        <a href="#" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" target="_blank" rel="noopener" aria-label="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
+                        <a href="https://www.facebook.com/share/18K3Bjq3pe/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://wa.me/256761446664" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-envelope"></i> wetakaivan@drwesina.com</p>
+                        <p><i class="fas fa-phone"></i> +256 761 446664</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="footer-copyright">
+                    © 2026 Mr. Wetaka Ivan. All rights reserved. Built with <i class="fas fa-heart"></i> in Uganda
+                </p>
+                <div class="footer-legal">
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                    <a href="#">Sitemap</a>
+                    <a href="#">Accessibility</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+    
+    <!-- Form Handling Note -->
+    <script>
+        // Note: To make the contact form actually send emails, you need to:
+        // 1. Replace 'your-form-id' in the form action with your actual Formspree ID
+        //    Sign up at https://formspree.io (free tier available)
+        // 2. OR use EmailJS (https://www.emailjs.com/)
+        // 3. OR set up a backend server endpoint
+        
+        // Example EmailJS integration (uncomment and add your credentials):
+        /*
+        (function() {
+            emailjs.init("YOUR_PUBLIC_KEY");
+        })();
+        
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', this)
+                .then(() => {
+                    showNotification('Message sent successfully!', 'success');
+                    this.reset();
+                }, (error) => {
+                    showNotification('Failed to send message. Please try again.', 'error');
+                });
+        });
+        */
+        
+        console.log('Contact form ready. Configure Formspree or EmailJS for production use.');
+    </script>
+</body>
+</html>

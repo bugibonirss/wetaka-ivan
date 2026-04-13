@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- Primary Meta Tags -->
+    <title>Certifications | Mr. Wetaka Ivan | Cisco Certified | Uganda</title>
+    <meta name="title" content="Certifications of Mr. Wetaka Ivan | Cisco Certified Educator">
+    <meta name="description" content="View professional certifications of Mr. Wetaka Ivan including Cisco Networking Academy credentials in AI, Computer Networks, Hardware Basics, and Business Modeling from Educate Uganda.">
+    <meta name="keywords" content="Cisco Certified Uganda, AI Certification, Computer Networks Certification, Hardware Basics, Business Modeling, Wetaka Ivan Certifications">
+    <meta name="author" content="Mr. Wetaka Ivan">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://wetaka-ivan.vercel.app/certifications">
+    <meta property="og:title" content="Certifications | Mr. Wetaka Ivan">
+    <meta property="og:description" content="Cisco Certified Educator - AI, Networks, Hardware & Business Modeling">
+    <meta property="og:image" content="https://wetaka-ivan.vercel.app/og-image.jpg">
+    
+    <!-- Canonical -->
+    <link rel="canonical" href="https://wetaka-ivan.vercel.app/certifications">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Certifications of Mr. Wetaka Ivan",
+        "description": "Professional certifications earned by Mr. Wetaka Ivan",
+        "hasPart": [
+            {
+                "@type": "EducationalOccupationalCredential",
+                "name": "Introduction to Modern AI",
+                "recognizedBy": { "@type": "Organization", "name": "Cisco Networking Academy" }
+            },
+            {
+                "@type": "EducationalOccupationalCredential",
+                "name": "Introduction to Computer Networks",
+                "recognizedBy": { "@type": "Organization", "name": "Cisco Networking Academy" }
+            },
+            {
+                "@type": "EducationalOccupationalCredential",
+                "name": "Computer Hardware Basics",
+                "recognizedBy": { "@type": "Organization", "name": "Cisco Networking Academy" }
+            },
+            {
+                "@type": "EducationalOccupationalCredential",
+                "name": "Bronze Certificate in Business Modeling",
+                "recognizedBy": { "@type": "Organization", "name": "Educate Uganda" }
+            }
+        ]
+    }
+    </script>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23256deb'/%3E%3Ctext x='50' y='68' font-size='50' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'%3EWI%3C/text%3E%3C/svg%3E">
+    
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        /* Certifications Page Specific Styles */
+        .page-header {
+            background: linear-gradient(135deg, var(--primary-soft) 0%, var(--secondary-soft) 100%);
+            padding: 8rem 0 4rem;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .page-header-content {
+            text-align: center;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .page-header h1 {
+            margin-bottom: var(--space-4);
+        }
+        
+        .page-header .breadcrumb {
+            display: flex;
+            justify-content: center;
+            gap: var(--space-2);
+            color: var(--gray-600);
+        }
+        
+        .page-header .breadcrumb a {
+            color: var(--primary);
+        }
+        
+        .page-header .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Stats Banner */
+        .stats-banner {
+            background: var(--white);
+            border-radius: var(--radius-2xl);
+            padding: var(--space-6) var(--space-8);
+            box-shadow: var(--shadow-xl);
+            margin-top: -3rem;
+            position: relative;
+            z-index: 10;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: var(--space-6);
+            border: 1px solid var(--border-light);
+        }
+        
+        .stat-banner-item {
+            text-align: center;
+            min-width: 150px;
+        }
+        
+        .stat-banner-value {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--primary);
+            line-height: 1.2;
+        }
+        
+        .stat-banner-label {
+            color: var(--gray-600);
+            font-size: 0.9375rem;
+        }
+        
+        /* Certifications Grid */
+        .certifications-full-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: var(--space-8);
+            margin-top: var(--space-12);
+        }
+        
+        .cert-card-full {
+            background: var(--white);
+            border-radius: var(--radius-2xl);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+            border: 1px solid var(--border-light);
+            transition: all var(--transition-base);
+            position: relative;
+        }
+        
+        .cert-card-full:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-2xl);
+        }
+        
+        .cert-card-full::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 6px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary), var(--accent));
+            transform: translateX(-100%);
+            transition: transform var(--transition-slow);
+        }
+        
+        .cert-card-full:hover::before {
+            transform: translateX(0);
+        }
+        
+        .cert-card-header {
+            padding: var(--space-6) var(--space-6) var(--space-4);
+            text-align: center;
+            border-bottom: 1px solid var(--border-light);
+        }
+        
+        .cert-badge-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto var(--space-4);
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border-radius: var(--radius-xl);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 2.5rem;
+            box-shadow: var(--shadow-md);
+        }
+        
+        .cert-card-header h3 {
+            font-size: 1.375rem;
+            margin-bottom: var(--space-2);
+        }
+        
+        .cert-issuer-full {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: var(--space-2);
+            color: var(--primary);
+            font-weight: 600;
+        }
+        
+        .cert-issuer-full i {
+            font-size: 1rem;
+        }
+        
+        .cert-card-body {
+            padding: var(--space-6);
+        }
+        
+        .cert-description-full {
+            color: var(--gray-600);
+            line-height: 1.8;
+            margin-bottom: var(--space-6);
+        }
+        
+        .cert-details {
+            background: var(--gray-50);
+            border-radius: var(--radius-lg);
+            padding: var(--space-4);
+            margin-bottom: var(--space-5);
+        }
+        
+        .cert-detail-row {
+            display: flex;
+            align-items: center;
+            gap: var(--space-3);
+            padding: var(--space-2) 0;
+        }
+        
+        .cert-detail-row i {
+            width: 24px;
+            color: var(--primary);
+        }
+        
+        .cert-detail-label {
+            font-weight: 600;
+            color: var(--gray-700);
+            min-width: 100px;
+        }
+        
+        .cert-detail-value {
+            color: var(--gray-600);
+        }
+        
+        .cert-skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--space-2);
+            margin-bottom: var(--space-5);
+        }
+        
+        .cert-skill-tag {
+            padding: 0.375rem 1rem;
+            background: var(--primary-soft);
+            color: var(--primary);
+            border-radius: var(--radius-full);
+            font-size: 0.8125rem;
+            font-weight: 500;
+        }
+        
+        .cert-card-footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: var(--space-4);
+            border-top: 1px solid var(--border-light);
+        }
+        
+        .cert-verification {
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+            color: var(--gray-500);
+            font-size: 0.875rem;
+        }
+        
+        .cert-verification i {
+            color: #10b981;
+        }
+        
+        .btn-verify {
+            padding: 0.5rem 1.25rem;
+            background: transparent;
+            border: 1px solid var(--primary);
+            color: var(--primary);
+            border-radius: var(--radius-full);
+            font-size: 0.875rem;
+            font-weight: 500;
+            transition: all var(--transition-base);
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-2);
+        }
+        
+        .btn-verify:hover {
+            background: var(--primary);
+            color: var(--white);
+        }
+        
+        /* Featured Certification */
+        .featured-cert {
+            grid-column: 1 / -1;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            border-radius: var(--radius-2xl);
+            padding: var(--space-8);
+            color: var(--white);
+            margin-bottom: var(--space-8);
+        }
+        
+        .featured-cert-content {
+            display: flex;
+            align-items: center;
+            gap: var(--space-8);
+        }
+        
+        .featured-cert-icon {
+            width: 120px;
+            height: 120px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: var(--radius-2xl);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            backdrop-filter: blur(10px);
+        }
+        
+        .featured-cert-info {
+            flex: 1;
+        }
+        
+        .featured-badge {
+            display: inline-block;
+            padding: 0.25rem 1rem;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: var(--radius-full);
+            font-size: 0.875rem;
+            margin-bottom: var(--space-3);
+        }
+        
+        .featured-cert-info h2 {
+            color: var(--white);
+            margin-bottom: var(--space-2);
+        }
+        
+        .featured-cert-info p {
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: var(--space-6);
+        }
+        
+        /* Learning Path Section */
+        .learning-path {
+            background: var(--bg-secondary);
+        }
+        
+        .path-timeline {
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .path-timeline::before {
+            content: '';
+            position: absolute;
+            top: 40px;
+            left: 60px;
+            right: 60px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary), var(--accent));
+            border-radius: var(--radius-full);
+        }
+        
+        .path-step {
+            text-align: center;
+            position: relative;
+            z-index: 2;
+            width: 120px;
+        }
+        
+        .path-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto var(--space-4);
+            background: var(--white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: var(--shadow-lg);
+            border: 3px solid var(--primary);
+            color: var(--primary);
+            font-size: 2rem;
+        }
+        
+        .path-step.completed .path-icon {
+            background: var(--primary);
+            color: var(--white);
+        }
+        
+        .path-step h4 {
+            font-size: 1rem;
+            margin-bottom: 0.25rem;
+        }
+        
+        .path-step p {
+            font-size: 0.8125rem;
+            color: var(--gray-500);
+            margin-bottom: 0;
+        }
+        
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .certifications-full-grid {
+                grid-template-columns: 1fr;
+                gap: var(--space-6);
+            }
+            
+            .featured-cert-content {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .stats-banner {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            
+            .path-timeline {
+                flex-direction: column;
+                align-items: center;
+                gap: var(--space-6);
+            }
+            
+            .path-timeline::before {
+                display: none;
+            }
+            
+            .path-step {
+                width: 100%;
+                max-width: 200px;
+            }
+        }
+        
+        @media (max-width: 640px) {
+            .cert-card-footer {
+                flex-direction: column;
+                gap: var(--space-4);
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- ==================== NAVIGATION ==================== -->
+    <nav class="navbar" id="navbar">
+        <div class="container navbar-container">
+            <a href="index.html" class="navbar-brand">
+                <div class="brand-logo">WI</div>
+                <div class="brand-text-group">
+                    <span class="brand-text">Wetaka Ivan</span>
+                    <span class="brand-subtext">Mathematics & ICT Educator</span>
+                </div>
+            </a>
+            
+            <button class="navbar-toggle" id="navbarToggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            
+            <div class="navbar-menu" id="navbarMenu">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="certifications.html" class="nav-link active">Certifications</a></li>
+                    <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <a href="contact.html" class="btn btn-primary btn-sm">
+                    <i class="fas fa-paper-plane"></i> Get In Touch
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main id="main-content">
+        <!-- ==================== PAGE HEADER ==================== -->
+        <section class="page-header">
+            <div class="container">
+                <div class="page-header-content" data-aos="fade-up">
+                    <h1 class="gradient-text">Certifications & Credentials</h1>
+                    <div class="breadcrumb">
+                        <a href="index.html">Home</a>
+                        <span>/</span>
+                        <span>Certifications</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-shape hero-shape-1" style="opacity: 0.3;"></div>
+            <div class="hero-shape hero-shape-2" style="opacity: 0.3;"></div>
+        </section>
+
+        <!-- ==================== STATS BANNER ==================== -->
+        <div class="container">
+            <div class="stats-banner" data-aos="fade-up">
+                <div class="stat-banner-item">
+                    <div class="stat-banner-value" data-count="4">0</div>
+                    <div class="stat-banner-label">Total Certifications</div>
+                </div>
+                <div class="stat-banner-item">
+                    <div class="stat-banner-value">3</div>
+                    <div class="stat-banner-label">Cisco Certifications</div>
+                </div>
+                <div class="stat-banner-item">
+                    <div class="stat-banner-value">1</div>
+                    <div class="stat-banner-label">Business Credential</div>
+                </div>
+                <div class="stat-banner-item">
+                    <div class="stat-banner-value">100%</div>
+                    <div class="stat-banner-label">Verified</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==================== FEATURED CERTIFICATION ==================== -->
+        <section class="section">
+            <div class="container">
+                <div class="featured-cert" data-aos="fade-up">
+                    <div class="featured-cert-content">
+                        <div class="featured-cert-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <div class="featured-cert-info">
+                            <span class="featured-badge">
+                                <i class="fas fa-star"></i> Featured Achievement
+                            </span>
+                            <h2>Cisco Networking Academy Specialization</h2>
+                            <p>
+                                Completed three comprehensive certifications through Cisco Networking Academy's 
+                                partnership with Islamic University in Uganda. These industry-recognized credentials 
+                                demonstrate proficiency in modern AI, computer networking, and hardware fundamentals.
+                            </p>
+                            <a href="#" class="btn btn-outline-light">
+                                <i class="fas fa-external-link-alt"></i> Verify on Cisco
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== CERTIFICATIONS GRID ==================== -->
+        <section class="section bg-light">
+            <div class="container">
+                <div class="section-header text-center" data-aos="fade-up">
+                    <span class="section-tag">My Credentials</span>
+                    <h2 class="section-title">Professional Certifications</h2>
+                    <p class="section-description">
+                        Industry-recognized certifications that validate my technical expertise
+                    </p>
+                </div>
+                
+                <div class="certifications-full-grid">
+                    <!-- Cisco AI -->
+                    <div class="cert-card-full" data-aos="fade-up" data-aos-delay="100">
+                        <div class="cert-card-header">
+                            <div class="cert-badge-icon">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <h3>Introduction to Modern AI</h3>
+                            <p class="cert-issuer-full">
+                                <i class="fas fa-building"></i>
+                                Cisco Networking Academy
+                            </p>
+                        </div>
+                        
+                        <div class="cert-card-body">
+                            <p class="cert-description-full">
+                                Comprehensive foundation in artificial intelligence concepts, including machine learning 
+                                fundamentals, neural networks, and practical AI applications in education. This certification 
+                                enables me to understand and implement AI tools in educational settings.
+                            </p>
+                            
+                            <div class="cert-details">
+                                <div class="cert-detail-row">
+                                    <i class="fas fa-calendar-check"></i>
+                                    <span class="cert-detail-label">Completed:</span>
+                                    <span class="cert-detail-value">2025</span>
+                                </div>
+                                <div class="cert-detail-row">
+                                    <i class="fas fa-clock"></i>
+                                    <span class="cert-detail-label">Duration:</span>
+                                    <span class="cert-detail-value">40 Hours</span>
+                                </div>
+                                <div class="cert-detail-row">
+                                    <i class="fas fa-university"></i>
+                                    <span class="cert-detail-label">Partner:</span>
+                                    <span class="cert-detail-value">IUIU</span>
+                                </div>
+                            </div>
+                            
+                            <div class="cert-skills">
+                                <span class="cert-skill-tag">Machine Learning</span>
+                                <span class="cert-skill-tag">Neural Networks</span>
+                                <span class="cert-skill-tag">AI Ethics</span>
+                                <span class="cert-skill-tag">Computer Vision</span>
+                            </div>
+                            
+                            <div class="cert-card-footer">
+                                <div class="cert-verification">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Credential Verified</span>
+                                </div>
+                                <a href="#" class="btn-verify">
+                                    View Certificate <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Cisco Networks -->
+                    <div class="cert-card-full" data-aos="fade-up" data-aos-delay="200">
+                        <div class="cert-card-header">
+                            <div class="cert-badge-icon">
+                                <i class="fas fa-network-wired"></i>
+                            </div>
+                            <h3>Introduction to Computer Networks</h3>
+                            <p class="cert-issuer-full">
+                                <i class="fas fa-building"></i>
+                                Cisco Networking Academy
+                            </p>
+                        </div>
+                        
+                        <div class="cert-card-body">
+                            <p class="cert-description-full">
+                                Completed through Islamic University in Uganda's partnership with Cisco. Covers network 
+                                fundamentals, OSI and TCP/IP models, IP addressing, subnetting, routing, switching, and 
+                                basic network security. Essential for managing school ICT infrastructure.
+                            </p>
+                            
+                            <div class="cert-details">
+                                <div class="cert-detail-row">
+                                    <i class="fas fa-calendar-check"></i>
+                                    <span class="cert-detail-label">Completed:</span>
+                                    <span class="cert-detail-value">2025</span>
+                                </div>
+                                <div class="cert-detail-row">
+                                    <i class="fas fa-clock"></i>
+                                    <span class="cert-detail-label">Duration:</span>
+                                    <span class="cert-detail-value">70 Hours</span>
+                                </div>
+                                <div class="cert-detail-row">
+                                    <i class="fas fa-university"></i>
+                                    <span class="cert-detail-label">Partner:</span>
+                                    <span class="cert-detail-value">IUIU</span>
+                                </div>
+                            </div>
+                            
+                            <div class="cert-skills">
+                                <span class="cert-skill-tag">TCP/IP</span>
+                                <span class="cert-skill-tag">Subnetting</span>
+                                <span class="cert-skill-tag">Routing</span>
+                                <span class="cert-skill-tag">Switching</span>
+                                <span class="cert-skill-tag">Network Security</span>
+                            </div>
+                            
+                            <div class="cert-card-footer">
+                                <div class="cert-verification">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Credential Verified</span>
+                                </div>
+                                <a href="#" class="btn-verify">
+                                    View Certificate <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Cisco Hardware -->
+                    <div class="cert-card-full" data-aos="fade-up" data-aos-delay="300">
+                        <div class="cert-card-header">
+                            <div class="cert-badge-icon">
+                                <i class="fas fa-microchip"></i>
+                            </div>
+                            <h3>Computer Hardware Basics</h3>
+                            <p class="cert-issuer-full">
+                                <i class="fas fa-building"></i>
+                                Cisco Networking Academy
+                            </p>
+                        </div>
+                        
+                        <div class="cert-card-body">
+                            <p class="cert-description-full">
+                                Mastered the fundamentals of computer hardware components, assembly procedures, 
+                                troubleshooting techniques, and maintenance best practices. This practical knowledge 
+                                enables me to manage computer labs and repair systems in educational environments.
+                            </p>
+                            
+                            <div class="cert-details">
+                                <div class="cert-detail-row">
+                                    <i class="fas fa-calendar-check"></i>
+                                    <span class="cert-detail-label">Completed:</span>
+                                    <span class="cert-detail-value">2025</span>
+                                </div>
+                                <div class="cert-detail-row">
+                                    <i class="fas fa-clock"></i>
+                                    <span class="cert-detail-label">Duration:</span>
+                                    <span class="cert-detail-value">50 Hours</span>
+                                </div>
+                                <div class="cert-detail-row">
+                                    <i class="fas fa-university"></i>
+                                    <span class="cert-detail-label">Partner:</span>
+                                    <span class="cert-detail-value">IUIU</span>
+                                </div>
+                            </div>
+                            
+                            <div class="cert-skills">
+                                <span class="cert-skill-tag">PC Assembly</span>
+                                <span class="cert-skill-tag">Troubleshooting</span>
+                                <span class="cert-skill-tag">Maintenance</span>
+                                <span class="cert-skill-tag">Component Repair</span>
+                            </div>
+                            
+                            <div class="cert-card-footer">
+                                <div class="cert-verification">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Credential Verified</span>
+                                </div>
+                                <a href="#" class="btn-verify">
+                                    View Certificate <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Business Modeling -->
+                    <div class="cert-card-full" data-aos="fade-up" data-aos-delay="400">
+                        <div class="cert-card-header">
+                            <div class="cert-badge-icon" style="background: linear-gradient(135deg, var(--accent), var(--accent-light));">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h3>Bronze Certificate in Business Modeling</h3>
+                            <p class="cert-issuer-full">
+                                <i class="fas fa-hand-holding-heart"></i>
+                                Educate Uganda
+                            </p>
+                        </div>
+                        
+                        <div class="cert-card-body">
+                            <p class="cert-description-full">
+                                Recognized for understanding business modeling concepts and entrepreneurial thinking. 
+                                This certification demonstrates strategic thinking capabilities and the ability to 
+                                develop sustainable educational projects and initiatives.
+                            </p>
+                            
+                            <div class="cert-details">
+                                <div class="cert-detail-row">
+                                    <i class="fas fa-calendar-check"></i>
+                                    <span class="cert-detail-label">Awarded:</span>
+                                    <span class="cert-detail-value">2024</span>
+                                </div>
+                                <div class="cert-detail-row">
+                                    <i class="fas fa-trophy"></i>
+                                    <span class="cert-detail-label">Level:</span>
+                                    <span class="cert-detail-value">Bronze</span>
+                                </div>
+                                <div class="cert-detail-row">
+                                    <i class="fas fa-users"></i>
+                                    <span class="cert-detail-label">Organization:</span>
+                                    <span class="cert-detail-value">Educate Uganda</span>
+                                </div>
+                            </div>
+                            
+                            <div class="cert-skills">
+                                <span class="cert-skill-tag">Business Planning</span>
+                                <span class="cert-skill-tag">Strategic Thinking</span>
+                                <span class="cert-skill-tag">Entrepreneurship</span>
+                                <span class="cert-skill-tag">Project Development</span>
+                            </div>
+                            
+                            <div class="cert-card-footer">
+                                <div class="cert-verification">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Credential Verified</span>
+                                </div>
+                                <a href="#" class="btn-verify">
+                                    View Certificate <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== LEARNING PATH ==================== -->
+        <section class="learning-path section">
+            <div class="container">
+                <div class="section-header text-center" data-aos="fade-up">
+                    <span class="section-tag">Continuous Learning</span>
+                    <h2 class="section-title">My Learning Journey</h2>
+                    <p class="section-description">
+                        A commitment to lifelong learning and professional development
+                    </p>
+                </div>
+                
+                <div class="path-timeline" data-aos="fade-up">
+                    <div class="path-step completed">
+                        <div class="path-icon">
+                            <i class="fas fa-microchip"></i>
+                        </div>
+                        <h4>Hardware Basics</h4>
+                        <p>Completed 2025</p>
+                    </div>
+                    <div class="path-step completed">
+                        <div class="path-icon">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <h4>Computer Networks</h4>
+                        <p>Completed 2025</p>
+                    </div>
+                    <div class="path-step completed">
+                        <div class="path-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h4>Modern AI</h4>
+                        <p>Completed 2025</p>
+                    </div>
+                    <div class="path-step">
+                        <div class="path-icon">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <h4>Cloud Computing</h4>
+                        <p>In Progress</p>
+                    </div>
+                    <div class="path-step">
+                        <div class="path-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h4>Cybersecurity</h4>
+                        <p>Planned</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== UPCOMING CERTIFICATIONS ==================== -->
+        <section class="section bg-light">
+            <div class="container">
+                <div class="section-header text-center" data-aos="fade-up">
+                    <span class="section-tag">Future Goals</span>
+                    <h2 class="section-title">Upcoming Certifications</h2>
+                    <p class="section-description">
+                        Continuing my professional development with these planned certifications
+                    </p>
+                </div>
+                
+                <div class="cert-preview-grid" style="grid-template-columns: repeat(3, 1fr);">
+                    <div class="cert-preview-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="cert-icon-wrapper">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <h3>CCNA: Introduction to Networks</h3>
+                        <p class="cert-issuer">Cisco Networking Academy</p>
+                        <span class="timeline-badge" style="margin-top: var(--space-4);">Planned 2026</span>
+                    </div>
+                    <div class="cert-preview-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="cert-icon-wrapper">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Python Programming</h3>
+                        <p class="cert-issuer">Cisco Networking Academy</p>
+                        <span class="timeline-badge" style="margin-top: var(--space-4);">Planned 2026</span>
+                    </div>
+                    <div class="cert-preview-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="cert-icon-wrapper">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3>Data Analytics Essentials</h3>
+                        <p class="cert-issuer">Cisco Networking Academy</p>
+                        <span class="timeline-badge" style="margin-top: var(--space-4);">Planned 2026</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== CTA SECTION ==================== -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-card" data-aos="fade-up">
+                    <h2>Let's Discuss Professional Development</h2>
+                    <p>Interested in collaborating on educational technology projects or learning more about my certifications? I'd love to connect.</p>
+                    <div class="cta-buttons">
+                        <a href="contact.html" class="btn btn-primary btn-lg">
+                            <i class="fas fa-envelope"></i> Contact Me
+                        </a>
+                        <a href="projects.html" class="btn btn-outline-light btn-lg">
+                            <i class="fas fa-project-diagram"></i> View Projects
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <div class="brand-logo">WI</div>
+                        <span class="brand-text">Wetaka Ivan</span>
+                    </div>
+                    <p class="footer-description">
+                        Mathematics and ICT Education student at Islamic University in Uganda. 
+                        Cisco Certified • EdTech Enthusiast • Future Educational Leader
+                    </p>
+                    <p class="footer-location">
+                        <i class="fas fa-map-pin"></i> Sironko/Mbale, Uganda
+                    </p>
+                </div>
+                
+                <div class="footer-links-group">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Me</a></li>
+                        <li><a href="certifications.html">Certifications</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links-group">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-file-pdf"></i> Download CV</a></li>
+                        <li><a href="#"><i class="fas fa-blog"></i> Blog (Coming Soon)</a></li>
+                        <li><a href="#"><i class="fas fa-book"></i> Teaching Resources</a></li>
+                        <li><a href="#"><i class="fas fa-shield-alt"></i> Privacy Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links-group">
+                    <h4>Connect</h4>
+                    <div class="footer-social">
+                        <a href="#" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" target="_blank" rel="noopener" aria-label="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
+                        <a href="https://www.facebook.com/share/18K3Bjq3pe/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://wa.me/256761446664" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-envelope"></i> wetakaivan@drwesina.com</p>
+                        <p><i class="fas fa-phone"></i> +256 761 446664</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="footer-copyright">
+                    © 2026 Mr. Wetaka Ivan. All rights reserved. Built with <i class="fas fa-heart"></i> in Uganda
+                </p>
+                <div class="footer-legal">
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                    <a href="#">Sitemap</a>
+                    <a href="#">Accessibility</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

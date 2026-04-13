@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- Primary Meta Tags -->
+    <title>Projects & Initiatives | Mr. Wetaka Ivan | EdTech Portfolio</title>
+    <meta name="title" content="Projects & Initiatives | Mr. Wetaka Ivan | Mathematics & ICT">
+    <meta name="description" content="Explore educational projects and initiatives by Mr. Wetaka Ivan including interactive math tutorials, network design proposals, and EdTech research.">
+    <meta name="keywords" content="EdTech Projects Uganda, Mathematics Projects, ICT Projects, Network Design, Educational Technology Portfolio, Wetaka Ivan Projects">
+    <meta name="author" content="Mr. Wetaka Ivan">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://wetaka-ivan.vercel.app/projects">
+    <meta property="og:title" content="Projects & Initiatives | Mr. Wetaka Ivan">
+    <meta property="og:description" content="Educational projects and initiatives by Mr. Wetaka Ivan - Mathematics & ICT Educator">
+    <meta property="og:image" content="https://wetaka-ivan.vercel.app/og-image.jpg">
+    
+    <!-- Canonical -->
+    <link rel="canonical" href="https://wetaka-ivan.vercel.app/projects">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Projects & Initiatives - Mr. Wetaka Ivan",
+        "description": "Educational technology projects and initiatives by Mr. Wetaka Ivan",
+        "hasPart": [
+            {
+                "@type": "CreativeWork",
+                "name": "Interactive Math Tutorials",
+                "description": "Interactive mathematics tutorials for secondary school students",
+                "url": "https://wetaka-ivan.vercel.app/projects#math-tutorials"
+            },
+            {
+                "@type": "CreativeWork",
+                "name": "School Network Design Proposal",
+                "description": "Comprehensive network design proposal for secondary school computer lab",
+                "url": "https://wetaka-ivan.vercel.app/projects#network-design"
+            },
+            {
+                "@type": "CreativeWork",
+                "name": "AI in Ugandan Classrooms",
+                "description": "Research paper on AI applications in Ugandan education",
+                "url": "https://wetaka-ivan.vercel.app/projects#ai-research"
+            }
+        ]
+    }
+    </script>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23256deb'/%3E%3Ctext x='50' y='68' font-size='50' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'%3EWI%3C/text%3E%3C/svg%3E">
+    
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        /* Projects Page Specific Styles */
+        .page-header {
+            background: linear-gradient(135deg, var(--primary-soft) 0%, var(--secondary-soft) 100%);
+            padding: 8rem 0 4rem;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .page-header-content {
+            text-align: center;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .page-header h1 {
+            margin-bottom: var(--space-4);
+        }
+        
+        .page-header .breadcrumb {
+            display: flex;
+            justify-content: center;
+            gap: var(--space-2);
+            color: var(--gray-600);
+        }
+        
+        .page-header .breadcrumb a {
+            color: var(--primary);
+        }
+        
+        .page-header .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Project Filters */
+        .project-filters {
+            display: flex;
+            justify-content: center;
+            gap: var(--space-4);
+            flex-wrap: wrap;
+            margin-bottom: var(--space-10);
+        }
+        
+        .filter-btn {
+            padding: 0.625rem 1.5rem;
+            background: var(--white);
+            border: 1px solid var(--border-light);
+            border-radius: var(--radius-full);
+            color: var(--gray-600);
+            font-weight: 500;
+            cursor: pointer;
+            transition: all var(--transition-base);
+            font-size: 0.9375rem;
+        }
+        
+        .filter-btn:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+        }
+        
+        .filter-btn.active {
+            background: var(--primary);
+            border-color: var(--primary);
+            color: var(--white);
+        }
+        
+        /* Projects Grid */
+        .projects-full-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: var(--space-6);
+        }
+        
+        .project-card-full {
+            background: var(--white);
+            border-radius: var(--radius-2xl);
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+            border: 1px solid var(--border-light);
+            transition: all var(--transition-base);
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .project-card-full:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-2xl);
+        }
+        
+        .project-image-full {
+            height: 220px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .project-image-bg {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 3.5rem;
+            transition: transform var(--transition-slow);
+        }
+        
+        .project-card-full:hover .project-image-bg {
+            transform: scale(1.05);
+        }
+        
+        .bg-math {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+        }
+        
+        .bg-network {
+            background: linear-gradient(135deg, var(--secondary) 0%, var(--secondary-light) 100%);
+        }
+        
+        .bg-ai {
+            background: linear-gradient(135deg, var(--accent) 0%, var(--accent-light) 100%);
+        }
+        
+        .bg-edtech {
+            background: linear-gradient(135deg, var(--purple) 0%, var(--primary) 100%);
+        }
+        
+        .bg-hardware {
+            background: linear-gradient(135deg, var(--gray-700) 0%, var(--gray-600) 100%);
+        }
+        
+        .bg-curriculum {
+            background: linear-gradient(135deg, var(--accent-teal, #0d9488) 0%, var(--primary) 100%);
+        }
+        
+        .project-status {
+            position: absolute;
+            top: var(--space-4);
+            right: var(--space-4);
+            padding: 0.375rem 1rem;
+            background: var(--white);
+            border-radius: var(--radius-full);
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--gray-700);
+            box-shadow: var(--shadow-md);
+            z-index: 2;
+        }
+        
+        .status-completed {
+            background: #10b981;
+            color: var(--white);
+        }
+        
+        .status-progress {
+            background: var(--accent);
+            color: var(--white);
+        }
+        
+        .status-planned {
+            background: var(--gray-500);
+            color: var(--white);
+        }
+        
+        .project-content-full {
+            padding: var(--space-6);
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .project-category-full {
+            display: inline-block;
+            color: var(--primary);
+            font-weight: 600;
+            font-size: 0.8125rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: var(--space-3);
+        }
+        
+        .project-title-full {
+            font-size: 1.375rem;
+            font-weight: 700;
+            margin-bottom: var(--space-3);
+            color: var(--gray-900);
+            line-height: 1.3;
+        }
+        
+        .project-description-full {
+            color: var(--gray-600);
+            line-height: 1.7;
+            margin-bottom: var(--space-5);
+            flex: 1;
+        }
+        
+        .project-meta {
+            display: flex;
+            align-items: center;
+            gap: var(--space-4);
+            margin-bottom: var(--space-4);
+            font-size: 0.875rem;
+            color: var(--gray-500);
+        }
+        
+        .project-meta i {
+            margin-right: var(--space-1);
+            color: var(--primary);
+        }
+        
+        .project-tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--space-2);
+            margin-bottom: var(--space-5);
+        }
+        
+        .tech-badge-full {
+            padding: 0.25rem 0.875rem;
+            background: var(--gray-100);
+            color: var(--gray-700);
+            border-radius: var(--radius-full);
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        
+        .project-footer-full {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: var(--space-4);
+            border-top: 1px solid var(--border-light);
+            margin-top: auto;
+        }
+        
+        .project-links-full {
+            display: flex;
+            gap: var(--space-3);
+        }
+        
+        .project-link-full {
+            width: 40px;
+            height: 40px;
+            background: var(--gray-100);
+            border-radius: var(--radius-lg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--gray-600);
+            transition: all var(--transition-base);
+        }
+        
+        .project-link-full:hover {
+            background: var(--primary);
+            color: var(--white);
+        }
+        
+        .project-stats {
+            display: flex;
+            gap: var(--space-4);
+        }
+        
+        .project-stat {
+            display: flex;
+            align-items: center;
+            gap: var(--space-1);
+            color: var(--gray-500);
+            font-size: 0.875rem;
+        }
+        
+        /* Featured Project */
+        .featured-project {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            border-radius: var(--radius-2xl);
+            padding: var(--space-8);
+            margin-bottom: var(--space-12);
+            color: var(--white);
+        }
+        
+        .featured-project-content {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr;
+            gap: var(--space-8);
+            align-items: center;
+        }
+        
+        .featured-badge-large {
+            display: inline-block;
+            padding: 0.375rem 1.25rem;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: var(--radius-full);
+            font-size: 0.875rem;
+            margin-bottom: var(--space-4);
+            backdrop-filter: blur(10px);
+        }
+        
+        .featured-project-content h2 {
+            color: var(--white);
+            margin-bottom: var(--space-3);
+        }
+        
+        .featured-project-content p {
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: var(--space-6);
+            line-height: 1.8;
+        }
+        
+        .featured-stats {
+            display: flex;
+            gap: var(--space-6);
+            margin-bottom: var(--space-6);
+        }
+        
+        .featured-stat-item {
+            text-align: center;
+        }
+        
+        .featured-stat-value {
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--white);
+        }
+        
+        .featured-stat-label {
+            font-size: 0.875rem;
+            color: rgba(255, 255, 255, 0.8);
+        }
+        
+        .featured-project-visual {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: var(--radius-2xl);
+            padding: var(--space-6);
+            backdrop-filter: blur(10px);
+            text-align: center;
+        }
+        
+        .featured-project-visual i {
+            font-size: 6rem;
+            margin-bottom: var(--space-4);
+            opacity: 0.9;
+        }
+        
+        /* Stats Summary */
+        .projects-stats-summary {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: var(--space-6);
+            margin-bottom: var(--space-10);
+        }
+        
+        .summary-card {
+            background: var(--white);
+            padding: var(--space-6);
+            border-radius: var(--radius-xl);
+            box-shadow: var(--shadow-md);
+            text-align: center;
+            border: 1px solid var(--border-light);
+        }
+        
+        .summary-icon {
+            width: 60px;
+            height: 60px;
+            margin: 0 auto var(--space-4);
+            background: var(--primary-soft);
+            border-radius: var(--radius-lg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary);
+            font-size: 1.75rem;
+        }
+        
+        .summary-value {
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--gray-900);
+            margin-bottom: var(--space-1);
+        }
+        
+        .summary-label {
+            color: var(--gray-500);
+            font-size: 0.9375rem;
+        }
+        
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .projects-full-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .featured-project-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            
+            .featured-stats {
+                justify-content: center;
+            }
+            
+            .projects-stats-summary {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .projects-full-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .project-filters {
+                gap: var(--space-2);
+            }
+            
+            .filter-btn {
+                padding: 0.5rem 1rem;
+                font-size: 0.8125rem;
+            }
+        }
+        
+        @media (max-width: 640px) {
+            .projects-stats-summary {
+                grid-template-columns: 1fr;
+            }
+            
+            .featured-stats {
+                flex-direction: column;
+                gap: var(--space-4);
+            }
+            
+            .project-footer-full {
+                flex-direction: column;
+                gap: var(--space-4);
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- ==================== NAVIGATION ==================== -->
+    <nav class="navbar" id="navbar">
+        <div class="container navbar-container">
+            <a href="index.html" class="navbar-brand">
+                <div class="brand-logo">WI</div>
+                <div class="brand-text-group">
+                    <span class="brand-text">Wetaka Ivan</span>
+                    <span class="brand-subtext">Mathematics & ICT Educator</span>
+                </div>
+            </a>
+            
+            <button class="navbar-toggle" id="navbarToggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            
+            <div class="navbar-menu" id="navbarMenu">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="certifications.html" class="nav-link">Certifications</a></li>
+                    <li class="nav-item"><a href="projects.html" class="nav-link active">Projects</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <a href="contact.html" class="btn btn-primary btn-sm">
+                    <i class="fas fa-paper-plane"></i> Get In Touch
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main id="main-content">
+        <!-- ==================== PAGE HEADER ==================== -->
+        <section class="page-header">
+            <div class="container">
+                <div class="page-header-content" data-aos="fade-up">
+                    <h1 class="gradient-text">Projects & Initiatives</h1>
+                    <div class="breadcrumb">
+                        <a href="index.html">Home</a>
+                        <span>/</span>
+                        <span>Projects</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-shape hero-shape-1" style="opacity: 0.3;"></div>
+            <div class="hero-shape hero-shape-2" style="opacity: 0.3;"></div>
+        </section>
+
+        <!-- ==================== STATS SUMMARY ==================== -->
+        <section class="section">
+            <div class="container">
+                <div class="projects-stats-summary" data-aos="fade-up">
+                    <div class="summary-card">
+                        <div class="summary-icon">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <div class="summary-value">6</div>
+                        <div class="summary-label">Total Projects</div>
+                    </div>
+                    <div class="summary-card">
+                        <div class="summary-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <div class="summary-value">2</div>
+                        <div class="summary-label">Completed</div>
+                    </div>
+                    <div class="summary-card">
+                        <div class="summary-icon">
+                            <i class="fas fa-spinner"></i>
+                        </div>
+                        <div class="summary-value">3</div>
+                        <div class="summary-label">In Progress</div>
+                    </div>
+                    <div class="summary-card">
+                        <div class="summary-icon">
+                            <i class="fas fa-calendar"></i>
+                        </div>
+                        <div class="summary-value">1</div>
+                        <div class="summary-label">Planned</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== FEATURED PROJECT ==================== -->
+        <section class="section bg-light">
+            <div class="container">
+                <div class="featured-project" data-aos="fade-up">
+                    <div class="featured-project-content">
+                        <div>
+                            <span class="featured-badge-large">
+                                <i class="fas fa-star"></i> Featured Project
+                            </span>
+                            <h2>Interactive Mathematics Learning Platform</h2>
+                            <p>
+                                Developing a comprehensive online platform for secondary school mathematics 
+                                students in Uganda. The platform features interactive tutorials, practice 
+                                exercises, and video lessons covering algebra, geometry, and trigonometry. 
+                                Designed to make mathematics accessible and engaging for all learners.
+                            </p>
+                            
+                            <div class="featured-stats">
+                                <div class="featured-stat-item">
+                                    <div class="featured-stat-value">15+</div>
+                                    <div class="featured-stat-label">Video Lessons</div>
+                                </div>
+                                <div class="featured-stat-item">
+                                    <div class="featured-stat-value">50+</div>
+                                    <div class="featured-stat-label">Practice Problems</div>
+                                </div>
+                                <div class="featured-stat-item">
+                                    <div class="featured-stat-value">3</div>
+                                    <div class="featured-stat-label">Topics Covered</div>
+                                </div>
+                            </div>
+                            
+                            <div class="project-tech-stack" style="margin-bottom: var(--space-6);">
+                                <span class="tech-badge-full" style="background: rgba(255,255,255,0.2); color: white;">HTML/CSS</span>
+                                <span class="tech-badge-full" style="background: rgba(255,255,255,0.2); color: white;">JavaScript</span>
+                                <span class="tech-badge-full" style="background: rgba(255,255,255,0.2); color: white;">Algebra</span>
+                                <span class="tech-badge-full" style="background: rgba(255,255,255,0.2); color: white;">Geometry</span>
+                            </div>
+                            
+                            <a href="#" class="btn btn-outline-light">
+                                <i class="fas fa-external-link-alt"></i> Preview Project
+                            </a>
+                        </div>
+                        
+                        <div class="featured-project-visual">
+                            <i class="fas fa-chalkboard"></i>
+                            <h3 style="color: white; margin-bottom: var(--space-2);">Coming Soon</h3>
+                            <p style="color: rgba(255,255,255,0.8); margin-bottom: 0;">
+                                Expected Launch: December 2026
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== PROJECT FILTERS ==================== -->
+        <section class="section">
+            <div class="container">
+                <div class="project-filters" data-aos="fade-up">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="mathematics">Mathematics</button>
+                    <button class="filter-btn" data-filter="ict">ICT & Networking</button>
+                    <button class="filter-btn" data-filter="research">Research</button>
+                    <button class="filter-btn" data-filter="edtech">EdTech</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== PROJECTS GRID ==================== -->
+        <section class="section bg-light">
+            <div class="container">
+                <div class="projects-full-grid">
+                    <!-- Project 1: Interactive Math Tutorials -->
+                    <div class="project-card-full" data-category="mathematics edtech" data-aos="fade-up" data-aos-delay="100">
+                        <div class="project-image-full">
+                            <div class="project-image-bg bg-math">
+                                <i class="fas fa-square-root-alt"></i>
+                            </div>
+                            <span class="project-status status-progress">In Progress</span>
+                        </div>
+                        <div class="project-content-full">
+                            <span class="project-category-full">Mathematics Education</span>
+                            <h3 class="project-title-full">Interactive Math Tutorials</h3>
+                            <p class="project-description-full">
+                                Developing a series of interactive mathematics tutorials for secondary school 
+                                students, focusing on algebra and geometry concepts. Using visual aids and 
+                                step-by-step explanations to make complex topics accessible.
+                            </p>
+                            
+                            <div class="project-meta">
+                                <span><i class="far fa-calendar"></i> Started: Jan 2026</span>
+                                <span><i class="far fa-clock"></i> 60% Complete</span>
+                            </div>
+                            
+                            <div class="project-tech-stack">
+                                <span class="tech-badge-full">Algebra</span>
+                                <span class="tech-badge-full">Geometry</span>
+                                <span class="tech-badge-full">Interactive Learning</span>
+                                <span class="tech-badge-full">Video Content</span>
+                            </div>
+                            
+                            <div class="project-footer-full">
+                                <div class="project-links-full">
+                                    <a href="#" class="project-link-full" aria-label="View Demo"><i class="fas fa-eye"></i></a>
+                                    <a href="#" class="project-link-full" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                                </div>
+                                <div class="project-stats">
+                                    <span class="project-stat"><i class="fas fa-video"></i> 8 Videos</span>
+                                    <span class="project-stat"><i class="fas fa-pencil-alt"></i> 25 Exercises</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 2: Network Design Proposal -->
+                    <div class="project-card-full" data-category="ict networking" data-aos="fade-up" data-aos-delay="200">
+                        <div class="project-image-full">
+                            <div class="project-image-bg bg-network">
+                                <i class="fas fa-network-wired"></i>
+                            </div>
+                            <span class="project-status status-completed">Completed</span>
+                        </div>
+                        <div class="project-content-full">
+                            <span class="project-category-full">ICT Infrastructure</span>
+                            <h3 class="project-title-full">School Network Design Proposal</h3>
+                            <p class="project-description-full">
+                                Created a comprehensive network design proposal for a model secondary school 
+                                computer lab, including hardware specifications, network topology, security 
+                                considerations, and budget estimates.
+                            </p>
+                            
+                            <div class="project-meta">
+                                <span><i class="far fa-calendar-check"></i> Completed: Mar 2026</span>
+                                <span><i class="far fa-file-alt"></i> 45 Pages</span>
+                            </div>
+                            
+                            <div class="project-tech-stack">
+                                <span class="tech-badge-full">Cisco</span>
+                                <span class="tech-badge-full">Network Design</span>
+                                <span class="tech-badge-full">Security</span>
+                                <span class="tech-badge-full">TCP/IP</span>
+                            </div>
+                            
+                            <div class="project-footer-full">
+                                <div class="project-links-full">
+                                    <a href="#" class="project-link-full" aria-label="View Document"><i class="fas fa-file-pdf"></i></a>
+                                    <a href="#" class="project-link-full" aria-label="Presentation"><i class="fas fa-presentation"></i></a>
+                                </div>
+                                <div class="project-stats">
+                                    <span class="project-stat"><i class="fas fa-star"></i> Grade A</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 3: AI in Ugandan Classrooms -->
+                    <div class="project-card-full" data-category="research ai edtech" data-aos="fade-up" data-aos-delay="300">
+                        <div class="project-image-full">
+                            <div class="project-image-bg bg-ai">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <span class="project-status status-progress">Drafting</span>
+                        </div>
+                        <div class="project-content-full">
+                            <span class="project-category-full">EdTech Research</span>
+                            <h3 class="project-title-full">AI in Ugandan Classrooms</h3>
+                            <p class="project-description-full">
+                                Research paper exploring the potential applications and challenges of 
+                                integrating AI tools in Ugandan secondary education, with a focus on 
+                                mathematics instruction and personalized learning.
+                            </p>
+                            
+                            <div class="project-meta">
+                                <span><i class="far fa-calendar"></i> Started: Feb 2026</span>
+                                <span><i class="far fa-clock"></i> 40% Complete</span>
+                            </div>
+                            
+                            <div class="project-tech-stack">
+                                <span class="tech-badge-full">AI</span>
+                                <span class="tech-badge-full">Education</span>
+                                <span class="tech-badge-full">Research</span>
+                                <span class="tech-badge-full">Data Analysis</span>
+                            </div>
+                            
+                            <div class="project-footer-full">
+                                <div class="project-links-full">
+                                    <a href="#" class="project-link-full" aria-label="View Abstract"><i class="fas fa-scroll"></i></a>
+                                    <a href="#" class="project-link-full" aria-label="References"><i class="fas fa-book"></i></a>
+                                </div>
+                                <div class="project-stats">
+                                    <span class="project-stat"><i class="fas fa-quote-right"></i> 12 Sources</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 4: Computer Hardware Workshop -->
+                    <div class="project-card-full" data-category="ict hardware" data-aos="fade-up" data-aos-delay="400">
+                        <div class="project-image-full">
+                            <div class="project-image-bg bg-hardware">
+                                <i class="fas fa-microchip"></i>
+                            </div>
+                            <span class="project-status status-completed">Completed</span>
+                        </div>
+                        <div class="project-content-full">
+                            <span class="project-category-full">ICT Education</span>
+                            <h3 class="project-title-full">Computer Hardware Workshop</h3>
+                            <p class="project-description-full">
+                                Designed and delivered a hands-on workshop on computer hardware basics for 
+                                fellow students at IUIU. Covered PC assembly, troubleshooting, and maintenance 
+                                with practical demonstrations.
+                            </p>
+                            
+                            <div class="project-meta">
+                                <span><i class="far fa-calendar-check"></i> Held: Dec 2025</span>
+                                <span><i class="fas fa-users"></i> 25+ Attendees</span>
+                            </div>
+                            
+                            <div class="project-tech-stack">
+                                <span class="tech-badge-full">PC Assembly</span>
+                                <span class="tech-badge-full">Troubleshooting</span>
+                                <span class="tech-badge-full">Hardware</span>
+                                <span class="tech-badge-full">Teaching</span>
+                            </div>
+                            
+                            <div class="project-footer-full">
+                                <div class="project-links-full">
+                                    <a href="#" class="project-link-full" aria-label="View Materials"><i class="fas fa-folder-open"></i></a>
+                                    <a href="#" class="project-link-full" aria-label="Photos"><i class="fas fa-images"></i></a>
+                                </div>
+                                <div class="project-stats">
+                                    <span class="project-stat"><i class="fas fa-thumbs-up"></i> 4.8/5 Rating</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 5: STEM Club Initiative -->
+                    <div class="project-card-full" data-category="mathematics edtech" data-aos="fade-up" data-aos-delay="500">
+                        <div class="project-image-full">
+                            <div class="project-image-bg bg-edtech">
+                                <i class="fas fa-flask"></i>
+                            </div>
+                            <span class="project-status status-progress">In Progress</span>
+                        </div>
+                        <div class="project-content-full">
+                            <span class="project-category-full">STEM Education</span>
+                            <h3 class="project-title-full">STEM Club Initiative</h3>
+                            <p class="project-description-full">
+                                Establishing a STEM club at IUIU to promote science, technology, engineering, 
+                                and mathematics among education students. Organizing workshops, competitions, 
+                                and collaborative projects.
+                            </p>
+                            
+                            <div class="project-meta">
+                                <span><i class="far fa-calendar"></i> Launched: Apr 2026</span>
+                                <span><i class="fas fa-user-plus"></i> 15 Members</span>
+                            </div>
+                            
+                            <div class="project-tech-stack">
+                                <span class="tech-badge-full">STEM</span>
+                                <span class="tech-badge-full">Leadership</span>
+                                <span class="tech-badge-full">Robotics</span>
+                                <span class="tech-badge-full">Coding</span>
+                            </div>
+                            
+                            <div class="project-footer-full">
+                                <div class="project-links-full">
+                                    <a href="#" class="project-link-full" aria-label="Club Page"><i class="fas fa-users"></i></a>
+                                    <a href="#" class="project-link-full" aria-label="Events"><i class="fas fa-calendar-alt"></i></a>
+                                </div>
+                                <div class="project-stats">
+                                    <span class="project-stat"><i class="fas fa-calendar-week"></i> Weekly Meetings</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 6: Mathematics Curriculum Review -->
+                    <div class="project-card-full" data-category="mathematics curriculum" data-aos="fade-up" data-aos-delay="600">
+                        <div class="project-image-full">
+                            <div class="project-image-bg bg-curriculum">
+                                <i class="fas fa-book-open"></i>
+                            </div>
+                            <span class="project-status status-planned">Planned</span>
+                        </div>
+                        <div class="project-content-full">
+                            <span class="project-category-full">Curriculum Development</span>
+                            <h3 class="project-title-full">Mathematics Curriculum Review</h3>
+                            <p class="project-description-full">
+                                Planned comprehensive review of O-Level mathematics curriculum in Uganda, 
+                                with recommendations for integrating technology and modern pedagogical approaches.
+                            </p>
+                            
+                            <div class="project-meta">
+                                <span><i class="far fa-calendar"></i> Planned: Q3 2026</span>
+                                <span><i class="far fa-hourglass"></i> Preparation Phase</span>
+                            </div>
+                            
+                            <div class="project-tech-stack">
+                                <span class="tech-badge-full">Curriculum Design</span>
+                                <span class="tech-badge-full">Assessment</span>
+                                <span class="tech-badge-full">Pedagogy</span>
+                                <span class="tech-badge-full">EdTech</span>
+                            </div>
+                            
+                            <div class="project-footer-full">
+                                <div class="project-links-full">
+                                    <a href="#" class="project-link-full" aria-label="Proposal"><i class="fas fa-file-alt"></i></a>
+                                    <a href="#" class="project-link-full" aria-label="Resources"><i class="fas fa-link"></i></a>
+                                </div>
+                                <div class="project-stats">
+                                    <span class="project-stat"><i class="fas fa-flag"></i> Seeking Partners</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== COLLABORATION CTA ==================== -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header text-center" data-aos="fade-up">
+                    <span class="section-tag">Get Involved</span>
+                    <h2 class="section-title">Interested in Collaborating?</h2>
+                    <p class="section-description">
+                        I'm always open to new project ideas, research collaborations, and educational initiatives
+                    </p>
+                </div>
+                
+                <div style="display: flex; justify-content: center; gap: var(--space-4);" data-aos="fade-up">
+                    <a href="contact.html" class="btn btn-primary btn-lg">
+                        <i class="fas fa-handshake"></i> Propose Collaboration
+                    </a>
+                    <a href="#" class="btn btn-outline btn-lg">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== CTA SECTION ==================== -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-card" data-aos="fade-up">
+                    <h2>Have a Project in Mind?</h2>
+                    <p>Let's discuss how we can work together to improve education through technology and innovative teaching methods.</p>
+                    <div class="cta-buttons">
+                        <a href="contact.html" class="btn btn-primary btn-lg">
+                            <i class="fas fa-envelope"></i> Get In Touch
+                        </a>
+                        <a href="about.html" class="btn btn-outline-light btn-lg">
+                            <i class="fas fa-user"></i> Learn More About Me
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <div class="brand-logo">WI</div>
+                        <span class="brand-text">Wetaka Ivan</span>
+                    </div>
+                    <p class="footer-description">
+                        Mathematics and ICT Education student at Islamic University in Uganda. 
+                        Cisco Certified • EdTech Enthusiast • Future Educational Leader
+                    </p>
+                    <p class="footer-location">
+                        <i class="fas fa-map-pin"></i> Sironko/Mbale, Uganda
+                    </p>
+                </div>
+                
+                <div class="footer-links-group">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Me</a></li>
+                        <li><a href="certifications.html">Certifications</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links-group">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-file-pdf"></i> Download CV</a></li>
+                        <li><a href="#"><i class="fas fa-blog"></i> Blog (Coming Soon)</a></li>
+                        <li><a href="#"><i class="fas fa-book"></i> Teaching Resources</a></li>
+                        <li><a href="#"><i class="fas fa-shield-alt"></i> Privacy Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links-group">
+                    <h4>Connect</h4>
+                    <div class="footer-social">
+                        <a href="#" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" target="_blank" rel="noopener" aria-label="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
+                        <a href="https://www.facebook.com/share/18K3Bjq3pe/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://wa.me/256761446664" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-envelope"></i> wetakaivan@drwesina.com</p>
+                        <p><i class="fas fa-phone"></i> +256 761 446664</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="footer-copyright">
+                    © 2026 Mr. Wetaka Ivan. All rights reserved. Built with <i class="fas fa-heart"></i> in Uganda
+                </p>
+                <div class="footer-legal">
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                    <a href="#">Sitemap</a>
+                    <a href="#">Accessibility</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+    
+    <!-- Project Filter Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const projectCards = document.querySelectorAll('.project-card-full');
+            
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Update active button
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    const filter = this.getAttribute('data-filter');
+                    
+                    projectCards.forEach(card => {
+                        if (filter === 'all') {
+                            card.style.display = 'flex';
+                        } else {
+                            const categories = card.getAttribute('data-category').split(' ');
+                            if (categories.includes(filter)) {
+                                card.style.display = 'flex';
+                            } else {
+                                card.style.display = 'none';
+                            }
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>

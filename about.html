@@ -1,0 +1,1243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- Primary Meta Tags -->
+    <title>About Mr. Wetaka Ivan | Mathematics & ICT Educator | Uganda</title>
+    <meta name="title" content="About Mr. Wetaka Ivan | Education Journey & Background">
+    <meta name="description" content="Learn about Mr. Wetaka Ivan's educational journey from Sironko to Islamic University in Uganda. BSc Education student specializing in Mathematics and ICT.">
+    <meta name="keywords" content="Wetaka Ivan, About Wetaka Ivan, Education Uganda, Islamic University in Uganda, Mathematics Teacher, ICT Educator">
+    <meta name="author" content="Mr. Wetaka Ivan">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://wetaka-ivan.vercel.app/about">
+    <meta property="og:title" content="About Mr. Wetaka Ivan | Education Journey">
+    <meta property="og:description" content="Educational journey of Mr. Wetaka Ivan - from Sironko to IUIU.">
+    <meta property="og:image" content="https://wetaka-ivan.vercel.app/og-image.jpg">
+    
+    <!-- Canonical -->
+    <link rel="canonical" href="https://wetaka-ivan.vercel.app/about">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "AboutPage",
+        "name": "About Mr. Wetaka Ivan",
+        "description": "Educational journey and background of Mr. Wetaka Ivan, Mathematics and ICT Education student.",
+        "mainEntity": {
+            "@type": "Person",
+            "name": "Mr. Wetaka Ivan",
+            "jobTitle": "Mathematics and ICT Educator",
+            "alumniOf": [
+                { "@type": "EducationalOrganization", "name": "Islamic University in Uganda" },
+                { "@type": "EducationalOrganization", "name": "Nkoma Secondary School Mbale" },
+                { "@type": "EducationalOrganization", "name": "Masaba Secondary School Budadiri" }
+            ]
+        }
+    }
+    </script>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23256deb'/%3E%3Ctext x='50' y='68' font-size='50' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'%3EWI%3C/text%3E%3C/svg%3E">
+    
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        /* About Page Specific Styles */
+        .page-header {
+            background: linear-gradient(135deg, var(--primary-soft) 0%, var(--secondary-soft) 100%);
+            padding: 8rem 0 4rem;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .page-header-content {
+            text-align: center;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .page-header h1 {
+            margin-bottom: var(--space-4);
+        }
+        
+        .page-header .breadcrumb {
+            display: flex;
+            justify-content: center;
+            gap: var(--space-2);
+            color: var(--gray-600);
+        }
+        
+        .page-header .breadcrumb a {
+            color: var(--primary);
+        }
+        
+        .page-header .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+        
+        .about-full-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: var(--space-12);
+            margin-bottom: var(--space-16);
+        }
+        
+        .about-text-content p {
+            margin-bottom: var(--space-5);
+            line-height: 1.8;
+        }
+        
+        .highlight-text {
+            color: var(--primary);
+            font-weight: 600;
+        }
+        
+        .about-sidebar {
+            position: sticky;
+            top: 100px;
+        }
+        
+        .profile-card-full {
+            background: var(--white);
+            border-radius: var(--radius-2xl);
+            overflow: hidden;
+            box-shadow: var(--shadow-xl);
+            border: 1px solid var(--border-light);
+        }
+        
+        .profile-header {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            padding: var(--space-8) var(--space-6);
+            text-align: center;
+            color: var(--white);
+        }
+        
+        .profile-avatar {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto var(--space-4);
+            border-radius: 50%;
+            overflow: hidden;
+            border: 4px solid var(--white);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .profile-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .profile-avatar-fallback {
+            width: 100%;
+            height: 100%;
+            background: var(--white);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--primary);
+        }
+        
+        .profile-header h3 {
+            color: var(--white);
+            margin-bottom: var(--space-1);
+        }
+        
+        .profile-header p {
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 0;
+        }
+        
+        .profile-body {
+            padding: var(--space-6);
+        }
+        
+        .profile-detail-item {
+            display: flex;
+            align-items: flex-start;
+            gap: var(--space-4);
+            padding: var(--space-4) 0;
+            border-bottom: 1px solid var(--border-light);
+        }
+        
+        .profile-detail-item:last-child {
+            border-bottom: none;
+        }
+        
+        .profile-detail-icon {
+            width: 40px;
+            height: 40px;
+            background: var(--primary-soft);
+            border-radius: var(--radius-lg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary);
+            font-size: 1.125rem;
+        }
+        
+        .profile-detail-content h4 {
+            font-size: 1rem;
+            margin-bottom: 0.25rem;
+        }
+        
+        .profile-detail-content p {
+            color: var(--gray-600);
+            margin-bottom: 0;
+            font-size: 0.9375rem;
+        }
+        
+        .profile-social {
+            display: flex;
+            gap: var(--space-2);
+            margin-top: var(--space-4);
+        }
+        
+        .profile-social a {
+            width: 40px;
+            height: 40px;
+            background: var(--gray-100);
+            border-radius: var(--radius-lg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--gray-600);
+            transition: all var(--transition-base);
+        }
+        
+        .profile-social a:hover {
+            background: var(--primary);
+            color: var(--white);
+        }
+        
+        /* Timeline Section */
+        .timeline-section {
+            background: var(--bg-secondary);
+        }
+        
+        .timeline-wrapper {
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+        }
+        
+        .timeline {
+            position: relative;
+            padding: var(--space-8) 0;
+        }
+        
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 4px;
+            height: 100%;
+            background: linear-gradient(180deg, var(--primary), var(--secondary), var(--accent), var(--primary));
+            border-radius: var(--radius-full);
+        }
+        
+        .timeline-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: var(--space-12);
+            position: relative;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+        
+        .timeline-item.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .timeline-item:last-child {
+            margin-bottom: 0;
+        }
+        
+        .timeline-date {
+            width: 160px;
+            padding: var(--space-3) var(--space-5);
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+            color: var(--white);
+            border-radius: var(--radius-full);
+            text-align: center;
+            font-weight: 600;
+            box-shadow: var(--shadow-md);
+            position: relative;
+            z-index: 2;
+            align-self: flex-start;
+        }
+        
+        .timeline-content {
+            width: calc(50% - 40px);
+            background: var(--white);
+            padding: var(--space-6);
+            border-radius: var(--radius-xl);
+            box-shadow: var(--shadow-lg);
+            border: 1px solid var(--border-light);
+            position: relative;
+            transition: all var(--transition-base);
+        }
+        
+        .timeline-content:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-2xl);
+            border-color: var(--primary-light);
+        }
+        
+        .timeline-item:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+        
+        .timeline-content::before {
+            content: '';
+            position: absolute;
+            top: 30px;
+            width: 20px;
+            height: 20px;
+            background: var(--white);
+            border: 4px solid var(--primary);
+            border-radius: 50%;
+            box-shadow: var(--shadow-md);
+            z-index: 3;
+        }
+        
+        .timeline-item:nth-child(odd) .timeline-content::before {
+            right: -50px;
+        }
+        
+        .timeline-item:nth-child(even) .timeline-content::before {
+            left: -50px;
+        }
+        
+        .timeline-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--primary-soft), var(--secondary-soft));
+            border-radius: var(--radius-lg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary);
+            font-size: 1.5rem;
+            margin-bottom: var(--space-4);
+        }
+        
+        .timeline-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: var(--space-1);
+        }
+        
+        .timeline-subtitle {
+            color: var(--primary);
+            font-weight: 600;
+            margin-bottom: var(--space-3);
+            font-size: 0.9375rem;
+        }
+        
+        .timeline-description {
+            color: var(--gray-600);
+            line-height: 1.7;
+            margin-bottom: 0;
+        }
+        
+        .timeline-badge {
+            display: inline-block;
+            padding: 0.25rem 1rem;
+            background: var(--primary-soft);
+            color: var(--primary);
+            border-radius: var(--radius-full);
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-top: var(--space-4);
+        }
+        
+        /* Skills Section */
+        .skills-full-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: var(--space-6);
+        }
+        
+        .skill-category-full {
+            background: var(--white);
+            border-radius: var(--radius-xl);
+            padding: var(--space-6);
+            box-shadow: var(--shadow-md);
+            border: 1px solid var(--border-light);
+        }
+        
+        .skill-category-header {
+            display: flex;
+            align-items: center;
+            gap: var(--space-4);
+            margin-bottom: var(--space-6);
+            padding-bottom: var(--space-4);
+            border-bottom: 2px solid var(--border-light);
+        }
+        
+        .skill-category-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--primary-soft), var(--secondary-soft));
+            border-radius: var(--radius-lg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary);
+            font-size: 1.5rem;
+        }
+        
+        .skill-category-header h3 {
+            font-size: 1.25rem;
+            margin-bottom: 0;
+        }
+        
+        .skill-list {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-5);
+        }
+        
+        .skill-item {
+            width: 100%;
+        }
+        
+        .skill-info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: var(--space-2);
+        }
+        
+        .skill-name {
+            font-weight: 600;
+            color: var(--gray-700);
+        }
+        
+        .skill-percent {
+            color: var(--primary);
+            font-weight: 700;
+        }
+        
+        .skill-bar {
+            height: 8px;
+            background: var(--gray-200);
+            border-radius: var(--radius-full);
+            overflow: hidden;
+        }
+        
+        .skill-progress {
+            height: 100%;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            border-radius: var(--radius-full);
+            width: 0;
+            transition: width 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--space-2);
+            margin-top: var(--space-5);
+        }
+        
+        .skill-tag {
+            padding: 0.375rem 1rem;
+            background: var(--gray-100);
+            color: var(--gray-700);
+            border-radius: var(--radius-full);
+            font-size: 0.875rem;
+            font-weight: 500;
+            transition: all var(--transition-fast);
+            cursor: default;
+        }
+        
+        .skill-tag:hover {
+            background: var(--primary);
+            color: var(--white);
+        }
+        
+        /* Languages Section */
+        .languages-grid {
+            display: flex;
+            justify-content: center;
+            gap: var(--space-10);
+            flex-wrap: wrap;
+        }
+        
+        .language-card {
+            text-align: center;
+            min-width: 120px;
+        }
+        
+        .language-circle {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto var(--space-4);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .language-circle span {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--white);
+        }
+        
+        .language-card h4 {
+            font-size: 1.125rem;
+            margin-bottom: 0.25rem;
+        }
+        
+        .language-card p {
+            color: var(--gray-500);
+            margin-bottom: 0;
+        }
+        
+        .language-1 { background: linear-gradient(135deg, var(--primary-soft), var(--primary)); }
+        .language-2 { background: linear-gradient(135deg, var(--secondary-soft), var(--secondary)); }
+        .language-3 { background: linear-gradient(135deg, var(--accent-soft), var(--accent)); }
+        .language-4 { background: linear-gradient(135deg, var(--purple-soft), var(--purple)); }
+        
+        /* Responsive Timeline */
+        @media (max-width: 1024px) {
+            .about-full-grid {
+                grid-template-columns: 1fr;
+                gap: var(--space-8);
+            }
+            
+            .about-sidebar {
+                position: static;
+                max-width: 500px;
+                margin: 0 auto;
+            }
+            
+            .skills-full-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .timeline::before {
+                left: 30px;
+            }
+            
+            .timeline-item {
+                flex-direction: column !important;
+                padding-left: 70px;
+            }
+            
+            .timeline-date {
+                width: auto;
+                margin-bottom: var(--space-4);
+            }
+            
+            .timeline-content {
+                width: 100%;
+            }
+            
+            .timeline-item:nth-child(odd) .timeline-content::before,
+            .timeline-item:nth-child(even) .timeline-content::before {
+                left: -50px;
+                right: auto;
+            }
+            
+            .skills-full-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        @media (max-width: 640px) {
+            .timeline-item {
+                padding-left: 50px;
+            }
+            
+            .timeline::before {
+                left: 15px;
+            }
+            
+            .timeline-item:nth-child(odd) .timeline-content::before,
+            .timeline-item:nth-child(even) .timeline-content::before {
+                left: -35px;
+            }
+            
+            .languages-grid {
+                gap: var(--space-4);
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- ==================== NAVIGATION ==================== -->
+    <nav class="navbar" id="navbar">
+        <div class="container navbar-container">
+            <a href="index.html" class="navbar-brand">
+                <div class="brand-logo">WI</div>
+                <div class="brand-text-group">
+                    <span class="brand-text">Wetaka Ivan</span>
+                    <span class="brand-subtext">Mathematics & ICT Educator</span>
+                </div>
+            </a>
+            
+            <button class="navbar-toggle" id="navbarToggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            
+            <div class="navbar-menu" id="navbarMenu">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link active">About</a></li>
+                    <li class="nav-item"><a href="certifications.html" class="nav-link">Certifications</a></li>
+                    <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <a href="contact.html" class="btn btn-primary btn-sm">
+                    <i class="fas fa-paper-plane"></i> Get In Touch
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main id="main-content">
+        <!-- ==================== PAGE HEADER ==================== -->
+        <section class="page-header">
+            <div class="container">
+                <div class="page-header-content" data-aos="fade-up">
+                    <h1 class="gradient-text">About Me</h1>
+                    <div class="breadcrumb">
+                        <a href="index.html">Home</a>
+                        <span>/</span>
+                        <span>About</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-shape hero-shape-1" style="opacity: 0.3;"></div>
+            <div class="hero-shape hero-shape-2" style="opacity: 0.3;"></div>
+        </section>
+
+        <!-- ==================== ABOUT FULL SECTION ==================== -->
+        <section class="section">
+            <div class="container">
+                <div class="about-full-grid">
+                    <div class="about-text-content" data-aos="fade-right">
+                        <h2 class="section-title">My Story</h2>
+                        
+                        <p>
+                            Hello! I'm <span class="highlight-text">Wetaka Ivan</span>, a dedicated education student 
+                            at the prestigious <span class="highlight-text">Islamic University in Uganda (IUIU)</span>. 
+                            I'm currently pursuing a Bachelor of Science Education with a double specialization in 
+                            <span class="highlight-text">Mathematics and Information Communication Technology (ICT)</span>.
+                        </p>
+                        
+                        <p>
+                            My educational journey began in the beautiful Sironko district, moving through various 
+                            institutions that each contributed uniquely to my growth. From Sironko Demonstration School 
+                            to Nkoma Secondary School, I've experienced diverse learning environments that have shaped 
+                            my understanding of Uganda's educational landscape.
+                        </p>
+                        
+                        <p>
+                            What drives me is the belief that every Ugandan student deserves access to quality 
+                            mathematics education combined with modern technological skills. I'm not just training 
+                            to be a teacher; I'm preparing to be an educational innovator who bridges the gap 
+                            between traditional teaching methods and the digital future.
+                        </p>
+                        
+                        <p>
+                            Beyond academics, I'm a continuous learner with certifications from Cisco Networking Academy 
+                            and Educate Uganda. I believe in the power of education to transform lives and communities, 
+                            and I'm committed to being part of Uganda's educational renaissance.
+                        </p>
+                        
+                        <div class="info-cards" style="margin-top: var(--space-8);">
+                            <div class="info-card">
+                                <div class="info-icon"><i class="fas fa-calendar-check"></i></div>
+                                <div>
+                                    <span class="info-label">Enrollment Date</span>
+                                    <span class="info-value">August 2024</span>
+                                    <small>First Year Student</small>
+                                </div>
+                            </div>
+                            <div class="info-card">
+                                <div class="info-icon"><i class="fas fa-flag-checkered"></i></div>
+                                <div>
+                                    <span class="info-label">Expected Completion</span>
+                                    <span class="info-value">May/June 2027</span>
+                                    <small>Final Examinations</small>
+                                </div>
+                            </div>
+                            <div class="info-card">
+                                <div class="info-icon"><i class="fas fa-user-graduate"></i></div>
+                                <div>
+                                    <span class="info-label">Graduation Ceremony</span>
+                                    <span class="info-value">December 2027</span>
+                                    <small>IUIU Convocation</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-sidebar" data-aos="fade-left">
+                        <div class="profile-card-full">
+                            <div class="profile-header">
+                                <div class="profile-avatar">
+                                    <img src="wetaka-ivan.jpg" alt="Mr. Wetaka Ivan" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                    <div class="profile-avatar-fallback" style="display: none;">WI</div>
+                                </div>
+                                <h3>Mr. Wetaka Ivan</h3>
+                                <p>Mathematics & ICT Educator in Training</p>
+                            </div>
+                            
+                            <div class="profile-body">
+                                <div class="profile-detail-item">
+                                    <div class="profile-detail-icon">
+                                        <i class="fas fa-university"></i>
+                                    </div>
+                                    <div class="profile-detail-content">
+                                        <h4>University</h4>
+                                        <p>Islamic University in Uganda (IUIU)</p>
+                                        <small>Main Campus, Mbale</small>
+                                    </div>
+                                </div>
+                                
+                                <div class="profile-detail-item">
+                                    <div class="profile-detail-icon">
+                                        <i class="fas fa-graduation-cap"></i>
+                                    </div>
+                                    <div class="profile-detail-content">
+                                        <h4>Program</h4>
+                                        <p>BSc Education (Math/ICT)</p>
+                                        <small>Year 2 • Class of 2027</small>
+                                    </div>
+                                </div>
+                                
+                                <div class="profile-detail-item">
+                                    <div class="profile-detail-icon">
+                                        <i class="fas fa-map-pin"></i>
+                                    </div>
+                                    <div class="profile-detail-content">
+                                        <h4>Location</h4>
+                                        <p>Mbale/Sironko, Uganda</p>
+                                        <small>Eastern Region</small>
+                                    </div>
+                                </div>
+                                
+                                <div class="profile-detail-item">
+                                    <div class="profile-detail-icon">
+                                        <i class="fas fa-certificate"></i>
+                                    </div>
+                                    <div class="profile-detail-content">
+                                        <h4>Certifications</h4>
+                                        <p>Cisco Certified (3 Specializations)</p>
+                                        <small>+ Business Modeling</small>
+                                    </div>
+                                </div>
+                                
+                                <div class="profile-social">
+                                    <a href="#" target="_blank" rel="noopener" aria-label="LinkedIn">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                    <a href="#" target="_blank" rel="noopener" aria-label="GitHub">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="#" target="_blank" rel="noopener" aria-label="X (Twitter)">
+                                        <i class="fab fa-x-twitter"></i>
+                                    </a>
+                                    <a href="https://www.facebook.com/share/18K3Bjq3pe/" target="_blank" rel="noopener" aria-label="Facebook">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                    <a href="https://wa.me/256761446664" target="_blank" rel="noopener" aria-label="WhatsApp">
+                                        <i class="fab fa-whatsapp"></i>
+                                    </a>
+                                </div>
+                                
+                                <div style="margin-top: var(--space-5);">
+                                    <a href="contact.html" class="btn btn-primary btn-block">
+                                        <i class="fas fa-envelope"></i> Contact Me
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== EDUCATION TIMELINE ==================== -->
+        <section class="timeline-section section">
+            <div class="container">
+                <div class="section-header text-center" data-aos="fade-up">
+                    <span class="section-tag">My Academic Journey</span>
+                    <h2 class="section-title">Education Timeline</h2>
+                    <p class="section-description">
+                        From nursery to university - A comprehensive educational path across Eastern Uganda
+                    </p>
+                </div>
+                
+                <div class="timeline-wrapper">
+                    <div class="timeline">
+                        <!-- University -->
+                        <div class="timeline-item" data-aos="fade-up">
+                            <div class="timeline-date">2024 - 2027</div>
+                            <div class="timeline-content">
+                                <div class="timeline-icon">
+                                    <i class="fas fa-university"></i>
+                                </div>
+                                <h3 class="timeline-title">Islamic University in Uganda</h3>
+                                <p class="timeline-subtitle">Bachelor of Science Education (Mathematics & ICT)</p>
+                                <p class="timeline-description">
+                                    Currently in Year 2 of my degree program at IUIU's main campus in Mbale. 
+                                    Specializing in Mathematics and Information Communication Technology, 
+                                    with expected course completion in May/June 2027 and graduation in December 2027.
+                                </p>
+                                <span class="timeline-badge">
+                                    <i class="fas fa-star"></i> Current Institution
+                                </span>
+                            </div>
+                        </div>
+                        
+                        <!-- A-Level -->
+                        <div class="timeline-item" data-aos="fade-up">
+                            <div class="timeline-date">A' Level</div>
+                            <div class="timeline-content">
+                                <div class="timeline-icon">
+                                    <i class="fas fa-school"></i>
+                                </div>
+                                <h3 class="timeline-title">Nkoma Secondary School, Mbale</h3>
+                                <p class="timeline-subtitle">Uganda Advanced Certificate of Education (UACE)</p>
+                                <p class="timeline-description">
+                                    Completed Advanced Level education with a science combination that prepared me 
+                                    for higher education in STEM fields. This period was crucial in developing 
+                                    analytical thinking and problem-solving abilities.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <!-- O-Level -->
+                        <div class="timeline-item" data-aos="fade-up">
+                            <div class="timeline-date">O' Level</div>
+                            <div class="timeline-content">
+                                <div class="timeline-icon">
+                                    <i class="fas fa-book"></i>
+                                </div>
+                                <h3 class="timeline-title">Masaba Secondary School, Budadiri</h3>
+                                <p class="timeline-subtitle">Uganda Certificate of Education (UCE)</p>
+                                <p class="timeline-description">
+                                    Completed Ordinary Level education where my passion for mathematics and sciences 
+                                    truly blossomed. Excelled in mathematics and integrated science subjects.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <!-- PLE -->
+                        <div class="timeline-item" data-aos="fade-up">
+                            <div class="timeline-date">P.7 (PLE)</div>
+                            <div class="timeline-content">
+                                <div class="timeline-icon">
+                                    <i class="fas fa-child"></i>
+                                </div>
+                                <h3 class="timeline-title">Buzelobi Primary School</h3>
+                                <p class="timeline-subtitle">Primary Leaving Examinations</p>
+                                <p class="timeline-description">
+                                    Completed Primary 7 and sat for the Primary Leaving Examinations, marking 
+                                    successful completion of primary education and qualification for secondary school.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <!-- P.5-P.6 -->
+                        <div class="timeline-item" data-aos="fade-up">
+                            <div class="timeline-date">P.5 - P.6</div>
+                            <div class="timeline-content">
+                                <div class="timeline-icon">
+                                    <i class="fas fa-pencil-alt"></i>
+                                </div>
+                                <h3 class="timeline-title">St. Aggrey Nursery and Primary School</h3>
+                                <p class="timeline-subtitle">Upper Primary Education</p>
+                                <p class="timeline-description">
+                                    Attended Primary 5 and 6, strengthening foundation in core subjects including 
+                                    Mathematics, English, Science, and Social Studies.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <!-- P.3-P.4 -->
+                        <div class="timeline-item" data-aos="fade-up">
+                            <div class="timeline-date">P.3 - P.4</div>
+                            <div class="timeline-content">
+                                <div class="timeline-icon">
+                                    <i class="fas fa-smile"></i>
+                                </div>
+                                <h3 class="timeline-title">New Life Nursery and Primary School</h3>
+                                <p class="timeline-subtitle">Middle Primary Education</p>
+                                <p class="timeline-description">
+                                    Completed Primary 3 and 4, developing independent learning skills and deeper 
+                                    understanding of academic subjects.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <!-- Nursery-P.2 -->
+                        <div class="timeline-item" data-aos="fade-up">
+                            <div class="timeline-date">Nursery - P.2</div>
+                            <div class="timeline-content">
+                                <div class="timeline-icon">
+                                    <i class="fas fa-baby"></i>
+                                </div>
+                                <h3 class="timeline-title">Sironko Demonstration School</h3>
+                                <p class="timeline-subtitle">Now Wamboga Memorial, Budadiri</p>
+                                <p class="timeline-description">
+                                    Educational journey began here, completing Nursery through Primary 2. 
+                                    This is where my love for learning first took root, thanks to dedicated teachers.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== SKILLS FULL SECTION ==================== -->
+        <section id="skills" class="section">
+            <div class="container">
+                <div class="section-header text-center" data-aos="fade-up">
+                    <span class="section-tag">My Expertise</span>
+                    <h2 class="section-title">Skills & Competencies</h2>
+                    <p class="section-description">
+                        A comprehensive skill set combining mathematics, technology, and education
+                    </p>
+                </div>
+                
+                <div class="skills-full-grid">
+                    <!-- Mathematics Skills -->
+                    <div class="skill-category-full" data-aos="fade-up" data-aos-delay="100">
+                        <div class="skill-category-header">
+                            <div class="skill-category-icon">
+                                <i class="fas fa-calculator"></i>
+                            </div>
+                            <h3>Mathematics</h3>
+                        </div>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Algebra & Calculus</span>
+                                    <span class="skill-percent">88%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="88"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Geometry & Trigonometry</span>
+                                    <span class="skill-percent">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Statistics & Probability</span>
+                                    <span class="skill-percent">82%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="82"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Mathematical Modeling</span>
+                                    <span class="skill-percent">78%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="78"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Differentiation</span>
+                            <span class="skill-tag">Integration</span>
+                            <span class="skill-tag">Linear Algebra</span>
+                            <span class="skill-tag">Problem Solving</span>
+                        </div>
+                    </div>
+                    
+                    <!-- ICT Skills -->
+                    <div class="skill-category-full" data-aos="fade-up" data-aos-delay="200">
+                        <div class="skill-category-header">
+                            <div class="skill-category-icon">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                            <h3>ICT & Technical</h3>
+                        </div>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Computer Networking</span>
+                                    <span class="skill-percent">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Hardware Troubleshooting</span>
+                                    <span class="skill-percent">90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="90"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">AI & Machine Learning Basics</span>
+                                    <span class="skill-percent">75%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="75"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Microsoft Office Suite</span>
+                                    <span class="skill-percent">92%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="92"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">TCP/IP</span>
+                            <span class="skill-tag">Subnetting</span>
+                            <span class="skill-tag">PC Assembly</span>
+                            <span class="skill-tag">EdTech Tools</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Professional Skills -->
+                    <div class="skill-category-full" data-aos="fade-up" data-aos-delay="300">
+                        <div class="skill-category-header">
+                            <div class="skill-category-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h3>Professional Skills</h3>
+                        </div>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Communication</span>
+                                    <span class="skill-percent">90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="90"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Problem Solving</span>
+                                    <span class="skill-percent">88%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="88"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Team Collaboration</span>
+                                    <span class="skill-percent">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Time Management</span>
+                                    <span class="skill-percent">82%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="82"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Leadership</span>
+                            <span class="skill-tag">Mentoring</span>
+                            <span class="skill-tag">Public Speaking</span>
+                            <span class="skill-tag">Critical Thinking</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== LANGUAGES SECTION ==================== -->
+        <section class="section bg-light">
+            <div class="container">
+                <div class="section-header text-center" data-aos="fade-up">
+                    <span class="section-tag">Communication</span>
+                    <h2 class="section-title">Languages I Speak</h2>
+                    <p class="section-description">
+                        Multilingual communication skills for diverse educational environments
+                    </p>
+                </div>
+                
+                <div class="languages-grid">
+                    <div class="language-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="language-circle language-1">
+                            <span>EN</span>
+                        </div>
+                        <h4>English</h4>
+                        <p>Fluent</p>
+                    </div>
+                    <div class="language-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="language-circle language-2">
+                            <span>LG</span>
+                        </div>
+                        <h4>Luganda</h4>
+                        <p>Native</p>
+                    </div>
+                    <div class="language-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="language-circle language-3">
+                            <span>LM</span>
+                        </div>
+                        <h4>Lumasaba</h4>
+                        <p>Native</p>
+                    </div>
+                    <div class="language-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="language-circle language-4">
+                            <span>SW</span>
+                        </div>
+                        <h4>Swahili</h4>
+                        <p>Basic</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== CTA SECTION ==================== -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-card" data-aos="fade-up">
+                    <h2>Interested in Collaborating?</h2>
+                    <p>I'm always open to discussing educational opportunities, research collaborations, or speaking engagements.</p>
+                    <div class="cta-buttons">
+                        <a href="contact.html" class="btn btn-primary btn-lg">
+                            <i class="fas fa-envelope"></i> Get In Touch
+                        </a>
+                        <a href="certifications.html" class="btn btn-outline-light btn-lg">
+                            <i class="fas fa-certificate"></i> View Certifications
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <div class="brand-logo">WI</div>
+                        <span class="brand-text">Wetaka Ivan</span>
+                    </div>
+                    <p class="footer-description">
+                        Mathematics and ICT Education student at Islamic University in Uganda. 
+                        Cisco Certified • EdTech Enthusiast • Future Educational Leader
+                    </p>
+                    <p class="footer-location">
+                        <i class="fas fa-map-pin"></i> Sironko/Mbale, Uganda
+                    </p>
+                </div>
+                
+                <div class="footer-links-group">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Me</a></li>
+                        <li><a href="certifications.html">Certifications</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links-group">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-file-pdf"></i> Download CV</a></li>
+                        <li><a href="#"><i class="fas fa-blog"></i> Blog (Coming Soon)</a></li>
+                        <li><a href="#"><i class="fas fa-book"></i> Teaching Resources</a></li>
+                        <li><a href="#"><i class="fas fa-shield-alt"></i> Privacy Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links-group">
+                    <h4>Connect</h4>
+                    <div class="footer-social">
+                        <a href="#" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" target="_blank" rel="noopener" aria-label="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
+                        <a href="https://www.facebook.com/share/18K3Bjq3pe/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://wa.me/256761446664" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-envelope"></i> wetakaivan@drwesina.com</p>
+                        <p><i class="fas fa-phone"></i> +256 761 446664</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="footer-copyright">
+                    © 2026 Mr. Wetaka Ivan. All rights reserved. Built with <i class="fas fa-heart"></i> in Uganda
+                </p>
+                <div class="footer-legal">
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                    <a href="#">Sitemap</a>
+                    <a href="#">Accessibility</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
